@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+        <!-- 配置数据库链接的基本信息 -->
+                        
+                        
+		<!--  数据库资源文件的位置及其名称 -->
+		<context:property-placeholder location="classpath:jdbc.properties"/>
+		<!--<context:property-placeholder location="classpath:ftp.properties"/>-->
+
+		<context:component-scan base-package="com.aurora"/>
+		<!--dbcp     -->
+		
+		<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" >
+			<property name="username" value="${username}"></property>
+			<property name="password" value="${password}"></property>
+			<property name="driverClassName" value="${driver}"></property>
+			<property name="jdbcUrl" value="${url}"></property>
+		</bean>		
+		
+		
+		
+		<!-- 配置mybatis所需要的会话工厂 -->
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="dataSource" ref="dataSource"></property>
+			
+			<!-- 配置mapper扫描文件的扫描位置 -->
+			<property name="mapperLocations">
+				<value>classpath:com/aurora/*/mapper/xml/*Mapper.xml</value>
+			</property>
+			<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+
+		</bean>	
+		
+		
+		
+		<!-- 配置mapper扫描器 -->
+		<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+			<!-- 指定mapper自动扫描的包,注意如果使用的是mapper扫描器，那么dao层完全是依赖于接口开发，不需要具体的实现类 -->
+			<property name="basePackage" value="com.aurora.*.mapper"></property>
+			<!-- 配置mapper所使用的会话工厂 -->
+			<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+
+		</bean>
+		
+		
+		<!-- 配置事务管理器  -->
+		
+		<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<property name="dataSource" ref="dataSource"></property>
+		</bean>
+		
+		<!-- 事务处理  -->
+		<aop:config>
+			<!-- 声明切入点 -->
+			<aop:pointcut expression="execution(* com.aurora.feedback.service..*.*(..))" id="trPointcut"/>
+			<!-- 通知与切入点关联 -->
+			<!--<aop:advisor advice-ref="trAdvice" pointcut-ref="trPointcut"/>-->
+		</aop:config>
+
+
+
+	<!-- Redis 配置 -->
+	<bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig" >
+		<property name="maxIdle" value="${redis.maxIdle}" />
+		<property name="maxWaitMillis" value="${redis.maxWait}" />
+		<property name="testOnBorrow" value="${redis.testOnBorrow}" />
+	</bean>
+	<bean id="connectionFactory"  class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" >
+		<property name="poolConfig" ref="poolConfig" />
+		<property name="port" value="${redis.port}" />
+		<property name="hostName" value="${redis.host}" />
+		<property name="password" value="${redis.password}" />
+		<property name="timeout" value="${redis.timeout}" ></property>
+		<property name="database" value="1"></property>
+	</bean>
+
+	<bean id="commonRedisTemplate" class="org.springframework.data.redis.core.RedisTemplate" >
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="keySerializer" ref="stringRedisSerializer" />
+		<property name="hashKeySerializer" ref="stringRedisSerializer" />
+		<property name="valueSerializer" ref="stringRedisSerializer" />
+		<property name="hashValueSerializer" ref="stringRedisSerializer" />
+	</bean>
+
+	<bean id="connectionFactory1"  class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" >
+		<property name="poolConfig" ref="poolConfig" />
+		<property name="port" value="${redis.port}" />
+		<property name="hostName" value="${redis.host}" />
+		<property name="password" value="${redis.password}" />
+		<property name="timeout" value="${redis.timeout}" ></property>
+		<property name="database" value="2"></property>
+	</bean>
+
+	<bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer" />
+	<bean id="cacheRedisTemplate" class="org.springframework.data.redis.core.RedisTemplate" >
+		<property name="connectionFactory" ref="connectionFactory1" />
+		<property name="keySerializer" ref="stringRedisSerializer" />
+		<property name="hashKeySerializer" ref="stringRedisSerializer" />
+		<property name="valueSerializer" ref="stringRedisSerializer" />
+		<property name="hashValueSerializer" ref="stringRedisSerializer" />
+	</bean>
+
+	<!-- Shiro Filter -->
+	<!--<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">-->
+		<!--<property name="securityManager" ref="securityManager" />-->
+		<!--<property name="loginUrl" value="/login" />-->
+		<!--<property name="successUrl" value="/user/list" />-->
+		<!--<property name="unauthorizedUrl" value="/login" />-->
+		<!--<property name="filterChainDefinitions">-->
+			<!--<value>-->
+				<!--/login = anon-->
+				<!--/user/** = authc-->
+				<!--/role/edit/* = perms[role:edit]-->
+				<!--/role/save = perms[role:edit]-->
+				<!--/role/list = perms[role:view]-->
+				<!--/** = authc-->
+			<!--</value>-->
+		<!--</property>-->
+	<!--</bean>-->
+
+	<!--<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
+		<!--<property name="realm" ref="myRealm" />-->
+	<!--</bean>-->
+
+	<!--<bean id="myRealm" class="com.aurora.shiro.UserRealm"></bean>-->
+
+	<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager" />
+
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+</beans>
