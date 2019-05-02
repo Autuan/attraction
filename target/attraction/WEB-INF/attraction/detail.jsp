@@ -1,4 +1,5 @@
-<!doctype html>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,7 +7,7 @@
 <link href="/css/attraction.detail.css" rel="stylesheet" type="text/css">
 
 <script src="/js/jquery.min.js"></script>
-<script src="/js/attraction.detail.common.js"></script>
+<script src="/js/attraction/attraction.detail.common.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
 	  var showproduct = {

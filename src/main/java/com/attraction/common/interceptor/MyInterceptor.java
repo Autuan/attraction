@@ -20,7 +20,7 @@ public class MyInterceptor implements HandlerInterceptor {
         if(null != userId && null != userInfo) {
             return true;
         }
-        response.sendRedirect("/log");
+        response.sendRedirect("/admin/log");
         return true;
     }
 

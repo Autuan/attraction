@@ -110,56 +110,8 @@ public class DeptController {
         return "success";
     }
 
-    /**
-     * 部门信息Excel表格下载
-     * @param response null
-     * @return
-     * @throws IOException
-     */
-    @RequestMapping("generatorExcel")
-    @SessionRefresh
-    public String generatorExcel(HttpServletResponse response)throws IOException{
-        String title = "部门列表--互联网产业集群反馈系统";
-        // 生成Excel文档
-        List<Dept> list = deptService.getDeptList();
-        Workbook workbook =  ExcelExportUtil.exportExcel(new ExportParams(title,"部门列表"),
-                Dept .class, list);
-
-
-        //同理可以设置数据行
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        try {
-            workbook.write(os);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        byte[] content = os.toByteArray();
-        InputStream is = new ByteArrayInputStream(content);
-        // 设置response参数，可以打开下载页面
-        response.reset();
-        response.setContentType("application/vnd.ms-excel;charset=utf-8");
-        response.setHeader("Content-Disposition", "attachment;filename="+ new String(( title + WebUtil.getCurrentTimeNoMark() + ".xls").getBytes(), "ISO8859-1"));
-        ServletOutputStream out = response.getOutputStream();
-        BufferedInputStream bis = null;
-        BufferedOutputStream bos = null;
-        try {
-            bis = new BufferedInputStream(is);
-            bos = new BufferedOutputStream(out);
-            byte[] buff = new byte[2048];
-            int bytesRead;
-            // Simple read/write loop.
-            while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {
-                bos.write(buff, 0, bytesRead);
-            }
-        } catch (final IOException e) {
-            throw e;
-        } finally {
-            if (bis != null)
-                bis.close();
-            if (bos != null)
-                bos.close();
-        }
-        return null;
+    @RequestMapping("/deptList")
+    public String deptList(){
+        return "/dept/deptList";
     }
-
 }

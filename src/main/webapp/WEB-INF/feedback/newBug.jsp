@@ -51,7 +51,6 @@
                                     <button type="button" id="publishBtn" class="btn btn-success">提交</button>
                                     <%--<button type="button" class="btn btn-info" disabled="disabled">撤消</button>--%>
                                 </div>
-
                             </div>
                         </form>
                     </div>

@@ -57,12 +57,12 @@
           });
 
           $("#loginButton").click(function () {
-              var url = "/user/login";
+              var url = "/admin/user/login";
               var data = $("#login-form").serialize();
               var callback = function (obj) {
                   if (obj.result=="success") {
                       $.cookie('feedbackCookie', obj.describe, { expires: 0.1});
-                      location = "/menu/";
+                      location = "/admin";
                   }
                   else {
                       alert(obj.describe);

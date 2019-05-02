@@ -1,6 +1,6 @@
 /* CSS Document */
 body,html{
-	background:url(../img/TB2.D7mdJFopuFjSZFHXXbSlXXa-407700539.jpg);
+	background:url(/images/bg_img.jpg);
 	min-height:100%;/*当页面的高度不足一屏幕的时，我们让其最小也得是一屏幕*/
 	background-size: cover;/*是指背景图片大小:cover按照当前图片最合适的比例铺满整个图片*/
 	widows:100%;}
@@ -16,8 +16,7 @@ body,html{
 	padding:0 10px;
 	line-height:36px;
 	color:#FFF;
-	font-size:15px;
-	text-decoration:underline;}
+	font-size:15px;}
 .search1{
 	width:644px;
 	margin:50px auto;
@@ -98,4 +97,9 @@ body,html{
 	line-height:24px;
 	font-size:15px;
 	bottom:0;
+}
+.recommendDiv{
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
 }

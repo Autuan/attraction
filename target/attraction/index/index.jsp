@@ -58,12 +58,12 @@
           });
 
           $("#loginButton").click(function () {
-              var url = "/user/login";
+              var url = "/admin/user/login";
               var data = $("#login-form").serialize();
               var callback = function (obj) {
                   if (obj.result=="success") {
                       $.cookie('autuanBlog', obj.describe, { expires: 0.1});
-                      location = "/toMenu/";
+                      location = "/admin";
                   }
                   else {
                       console.log("error")

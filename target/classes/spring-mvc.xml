@@ -87,8 +87,8 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/admin/**" />
-			<mvc:exclude-mapping path="/admin/log"/>
 			<mvc:exclude-mapping path="/admin/user/login"/>
+			<mvc:exclude-mapping path="/admin/**"/>
 			<mvc:exclude-mapping path="/file/upload"/>
 			<bean class="com.attraction.common.interceptor.MyInterceptor"></bean>
 		</mvc:interceptor>

@@ -72,8 +72,6 @@
 			<!--<aop:advisor advice-ref="trAdvice" pointcut-ref="trPointcut"/>-->
 		</aop:config>
 
-
-
 	<!-- Redis 配置 -->
 	<bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig" >
 		<property name="maxIdle" value="${redis.maxIdle}" />
@@ -115,29 +113,8 @@
 		<property name="hashValueSerializer" ref="stringRedisSerializer" />
 	</bean>
 
-	<!-- Shiro Filter -->
-	<!--<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">-->
-		<!--<property name="securityManager" ref="securityManager" />-->
-		<!--<property name="loginUrl" value="/login" />-->
-		<!--<property name="successUrl" value="/user/list" />-->
-		<!--<property name="unauthorizedUrl" value="/login" />-->
-		<!--<property name="filterChainDefinitions">-->
-			<!--<value>-->
-				<!--/login = anon-->
-				<!--/user/** = authc-->
-				<!--/role/edit/* = perms[role:edit]-->
-				<!--/role/save = perms[role:edit]-->
-				<!--/role/list = perms[role:view]-->
-				<!--/** = authc-->
-			<!--</value>-->
-		<!--</property>-->
-	<!--</bean>-->
 
-	<!--<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
-		<!--<property name="realm" ref="myRealm" />-->
-	<!--</bean>-->
-
-	<!--<bean id="myRealm" class="com.attractiontion.shiro.UserRealm"></bean>-->
+	<bean id="exceptionHandler" class="com.attraction.common.exception.ExceptionHandler"/>
 
 	<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager" />
 

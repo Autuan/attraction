@@ -23,12 +23,12 @@ public class AdminPageController {
         return "/admin/login";
     }
 
-    @RequestMapping("/log")
+    @RequestMapping(value = {"","/login"})
     public String logPage(HttpSession session){
         Integer userId = (Integer) session.getAttribute("userId");
         Integer userInfo = (Integer) session.getAttribute("userInfo");
         if(null != userId && null != userInfo) {
-            return "menu";
+            return "/menu";
         }
         return "/admin/login";
     }
