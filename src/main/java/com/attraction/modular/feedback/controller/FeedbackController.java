@@ -264,7 +264,7 @@ public class FeedbackController {
     @RequestMapping("/generatorExcel")
     @SessionRefresh
     public String generatorExcel(HttpServletResponse response) throws IOException {
-        String title = "反馈列表--互联网产业集群反馈系统";
+        String title = "反馈列表--畅游管理系统";
         // 生成Excel文档
         List<Feedback> list = feedBackService.getFeedbackList(null, null, null, null);
         Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams(title, "反馈列表"),

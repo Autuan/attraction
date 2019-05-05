@@ -14,7 +14,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>互联网产业集群反馈系统</title>
+    <title>畅游管理系统</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,7 @@
   <jsp:include page="./menuCommon.jsp"></jsp:include>
     <main class="app-content">
       <div th:include="managerCommon :: contentTitle"></div>
-      欢迎使用互联网产业集群反馈系统,请点击左侧反馈错误进行反馈
+      欢迎使用畅游管理系统,请点击左侧反馈错误进行反馈
     </main>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>

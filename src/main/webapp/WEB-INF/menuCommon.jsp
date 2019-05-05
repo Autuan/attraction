@@ -4,7 +4,7 @@
 <div th:fragment="ManagerCommon">
     <input type="hidden" value="${aimPath}" id="aimPath" />
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="/menu"><h4>互联网产业集群反馈系统</h4></a>
+    <header class="app-header"><a class="app-header__logo" href="/menu"><h4>畅游管理系统</h4></a>
         <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="/back/#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
         <ul class="app-nav">

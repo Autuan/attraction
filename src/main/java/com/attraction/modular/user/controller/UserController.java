@@ -227,7 +227,7 @@ public class UserController {
     @RequestMapping("generatorExcel")
     @SessionRefresh
     public String generatorExcel(HttpServletResponse response)throws IOException {
-        String title = "用户列表--互联网产业集群反馈系统";
+        String title = "用户列表--畅游管理系统";
         // 生成Excel文档
         List<User> list = userService.getUserList(0, 999);
         Workbook workbook =  ExcelExportUtil.exportExcel(new ExportParams(title,"用户列表"),

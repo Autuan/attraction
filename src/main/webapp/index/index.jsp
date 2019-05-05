@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
     <!-- Font-icon css-->
     <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <title>互联网产业集群反馈系统</title>
+    <title>畅游管理系统</title>
   </head>
   <body>
     <section class="material-half-bg">
@@ -17,7 +17,7 @@
     </section>
     <section class="login-content">
       <div class="logo">
-        <h3>互联网产业集群反馈系统</h3>
+        <h3>畅游管理系统</h3>
       </div>
       <div class="login-box" id="loginBox">
         <form class="login-form" id="login-form">

@@ -17,9 +17,9 @@ editor1.customConfig.menus = [
     'undo',  // 撤销
     'redo'  // 重复
 ];
-editor1.customConfig.uploadImgServer = '/file/uploadFiles';  // 上传图片到服务器
+editor1.customConfig.uploadImgServer = '/file/uploadFTP';  // 上传图片到服务器
 editor1.customConfig.showLinkImg = false; // 取消网络图片
-editor1.customConfig.uploadFileName = 'file';
+editor1.customConfig.uploadFileName = 'uploadFile';
 editor1.create();
 
 $(function () {
@@ -37,9 +37,6 @@ $(function () {
     $("#publishBtn").click(function () {
         var content = editor1.txt.html();
         $("#attractionDetail").val(content);
-        console.log(content);
-        console.log($("#attractionDetail").val());
-        // return;
         var url ;
         if($("#id").val()==="") {
             url = "/admin/attraction/insertAttraction";

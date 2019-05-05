@@ -2,6 +2,8 @@ package com.attraction.modular.member.controller;
 
 import com.attraction.common.entity.ReturnResult;
 import com.attraction.common.util.LoginUtil;
+import com.attraction.modular.attraction.entity.Attraction;
+import com.attraction.modular.attraction.service.IAttractionService;
 import com.attraction.modular.base.service.IBaseService;
 import com.attraction.modular.member.entity.Member;
 import com.attraction.modular.member.service.IMemberService;
@@ -12,15 +14,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Validated
-@RestController
+@Controller
 @RequestMapping("/member")
 public class MemberController {
     @Autowired
     private IMemberService memberService;
+    @Autowired
+    private IAttractionService attractionService;
     @Autowired
     private IBaseService baseService;
     /**
@@ -29,6 +35,7 @@ public class MemberController {
      * @return
      */
     @RequestMapping("/insertMember")
+    @ResponseBody
     public ReturnResult insertMember(Member member) {
         try {
             memberService.insertMember(member);
@@ -45,6 +52,7 @@ public class MemberController {
      * @return
      */
     @RequestMapping("/updateMember")
+    @ResponseBody
     public ReturnResult updateMember(Member member){
         try {
             memberService.updateMember(member);
@@ -56,11 +64,12 @@ public class MemberController {
     }
 
     /**
-     * 删除部门
+     * 删除
      * @param memberId
      * @return
      */
     @RequestMapping("/deleteMember")
+    @ResponseBody
     public ReturnResult deleteMember(Integer memberId){
         try {
             memberService.deleteMember(memberId);
@@ -79,6 +88,7 @@ public class MemberController {
      * @return
      */
     @RequestMapping("/sign")
+    @ResponseBody
     public ReturnResult sign(String username,
                               String password,
                              String confirmPassword){
@@ -97,6 +107,7 @@ public class MemberController {
      * @return
      */
     @PostMapping("/login")
+    @ResponseBody
     public ReturnResult login(String username, String password,
                               HttpSession session){
         baseService.checkStrParamNotBlank(username,password);
@@ -111,4 +122,23 @@ public class MemberController {
         return ReturnResult.ok();
     }
 
+    @RequestMapping("/logOut")
+    public String logOut(HttpSession session){
+        session.invalidate();
+        return "redirect:/index";
+    }
+
+    @RequestMapping("/info")
+    public ModelAndView info(HttpSession session,ModelAndView mav){
+        Member member = (Member) session.getAttribute("member");
+        if(null == member) {
+            mav.setViewName("/member/member");
+            return mav;
+        }
+        List<Attraction> cityList = attractionService.list();
+        mav.addObject("cityList", cityList);
+        mav.addObject("member", member);
+        mav.setViewName("/member/info");
+        return mav;
+    }
 }

@@ -550,7 +550,7 @@ img{ border:0px;}
 	font-weight:bold;
 	font-size:20px;
 	color:#000;
-	text-decoration:underline;}
+}
 .panel p{
 	margin-bottom:20px;
 }
@@ -577,7 +577,7 @@ img{ border:0px;}
 .panel .judge01 .write{
 	position:absolute;
 	top:20px;
-	left:80px;
+	left:20px;
 }
 .panel .judge01 .write .which{
 	color:#666;

@@ -76,5 +76,20 @@
         select
         <include refid="Base_Column_List" />
         from attraction_tab
+        <if test="null != pageNo and null != pageSize">
+          limit ${pageNo},${pageSize}
+        </if>
     </select>
+
+  <select id="search"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from attraction_tab
+      <where>
+          <if test="null != keyword and keyword != ''">
+              AND attraction_name LIKE "%"#{keyword}"%"
+              AND attraction_address LIKE "%"#{keyword}"%"
+          </if>
+      </where>
+  </select>
 </mapper>
