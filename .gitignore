@@ -30,3 +30,4 @@ HELP.md
 /src/test/java/
 src/main/java/com/attraction/modular/front/
 src/main/webapp/WEB-INF/front/
+.idea/workspace.xml
