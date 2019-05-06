@@ -108,7 +108,7 @@ $(function(){
 
     $("#myModal").modal("hide");
     $('#blogTable').bootstrapTable('destroy').bootstrapTable({
-        url: '/user/getUserList',   //url一般是请求后台的url地址,调用ajax获取数据。此处我用本地的json数据来填充表格。
+        url: '/admin/user/getUserList',   //url一般是请求后台的url地址,调用ajax获取数据。此处我用本地的json数据来填充表格。
         method: "get",                     //使用get请求到服务器获取数据
         dataType: "json",
         contentType: 'application/json,charset=utf-8',
@@ -177,38 +177,6 @@ $(function(){
                 validate: function (v) {
                     if (!v) return '用户名不能为空';
 
-                }
-            }
-        },{
-            field: 'userRole',
-            title: '身份',
-            //             formatter: roleFormatter,
-            editable: {
-                type: 'select',
-                title: '身份',
-                source:[{value:"0",text:"工作人员"},{value:"1",text:"主管"},{value:"2",text:"技术人员"}]
-            }
-        },{
-            field: 'deptId',
-            title: '部门',
-            // formatter: deptFormatter,
-            editable: {
-                type: 'select',
-                title: '部门',
-                source: function () {
-                    var result = [];
-                    $.ajax({
-                        url: '/dept/getDeptList',
-                        async: false,
-                        type: "get",
-                        data: {},
-                        success: function (data) {
-                            $.each(data, function (key, value) {
-                                result.push({ value: value.deptId, text: value.deptName });
-                            });
-                        }
-                    });
-                    return result;
                 }
             }
         },{

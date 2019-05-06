@@ -241,7 +241,7 @@
                         <br>
                         <input type="button" value="修改信息" class="btn logBtn" onclick="update_confirm()"
                                style="margin-right: 20px;">
-                        <input type="button" value="删除账号" class="btn logBtn" onclick='signin()' id="btn">
+                        <input type="button" value="删除账号" class="btn logBtn" onclick='delete_confirm()' id="btn">
                     </form>
                     <%--<a href="javascript:void(0);">Forget your password?</a>--%>
                 </div>
@@ -284,33 +284,20 @@
         return "success";
     }
 
-    //去注册按钮
-    function signin() {
-        showSignIn();
-        let status = document.getElementById("status").getElementsByTagName("i")
-        if (onoff) {
-            confirm.style.height = 51 + "px"
-            status[0].style.top = 35 + "px"
-            status[1].style.top = 0
-            onoff = !onoff
-        } else {
-
+    function delete_confirm() {
+        var r=confirm("确认删除用户?");
+        if (r==true){
+            var url = basePath + "/member/deleteMember?memberId="+$("#id").val();
+            $.post(url, function (obj) {
+                if(obj.code === "200") {
+                    $("#errorTip").html("删除成功");
+                    window.setTimeout( function(){
+                        location.href=basePath;
+                    }, 1500 );
+                }
+            }, "json");
         }
     }
-
-    //返回登录按钮
-    function login() {
-        showLogIn();
-        if (onoff) {
-        } else {
-            let status = document.getElementById("status").getElementsByTagName("i")
-            confirm.style.height = 0
-            status[0].style.top = 0
-            status[1].style.top = 35 + "px"
-            onoff = !onoff
-        }
-    }
-
     function update_confirm() {
         // var errorMsg = checkParam();
         var errorMsg = 'success';

@@ -29,7 +29,7 @@
         <ul class="app-menu">
             <li class="treeview userTree"><a class="app-menu__item" href="/back/#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">用户管理</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item userList" href="/admin/user/userList"><i class="icon fa fa-circle-o"></i> 已有用户</a></li>
+                    <li><a class="treeview-item userList" href="/admin/user/userList"><i class="icon fa fa-circle-o"></i> 后台用户管理</a></li>
                 </ul>
             </li>
             <%--<li class="treeview"><a class="app-menu__item" href="/back/#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">角色管理</span><i class="treeview-indicator fa fa-angle-right"></i></a>--%>

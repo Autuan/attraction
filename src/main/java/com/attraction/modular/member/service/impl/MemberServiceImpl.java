@@ -27,6 +27,9 @@ public class MemberServiceImpl implements IMemberService {
         if(checkUser(member.getAccount()) > 0 ) {
             throw new CheckException("此用户名已存在");
         }
+        if(StrUtil.isBlank(member.getName())) {
+            member.setName(member.getAccount());
+        }
         return memberMapper.insertSelective(member);
     }
 

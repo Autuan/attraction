@@ -31,3 +31,4 @@ HELP.md
 src/main/java/com/attraction/modular/front/
 src/main/webapp/WEB-INF/front/
 .idea/workspace.xml
+/.idea/

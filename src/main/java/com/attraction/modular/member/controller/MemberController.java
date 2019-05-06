@@ -84,13 +84,15 @@ public class MemberController {
      */
     @RequestMapping("/deleteMember")
     @ResponseBody
-    public ReturnResult deleteMember(Integer memberId){
+    public ReturnResult deleteMember(Integer memberId,HttpSession session){
         try {
             memberService.deleteMember(memberId);
         } catch (Exception e) {
             e.printStackTrace();
             return ReturnResult.error();
         }
+        session.invalidate();
+
         return ReturnResult.ok();
     }
 
