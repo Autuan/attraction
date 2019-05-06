@@ -24,8 +24,8 @@
     <div class="top">
         <div class="top1">
             <c:if test="${member.account != null}">
-                <a href="javascript:void(0);">${member.name}</a>
-                <a href="/member/logOut">退出登录</a>
+                <a href="<%=basePath%>/member/info">${member.name}</a>
+                <a href="<%=basePath%>/member/logOut">退出登录</a>
             </c:if>
             <c:if test="${member.account == null}">
                 <a href="<%=basePath%>/member">登录 | 注册</a>
@@ -36,7 +36,7 @@
     <div class="logobg">
         <div class="center">
             <div class="logo">
-                <img src="images/index_img/logo.gif" width="249" height="55">
+                <img src="<%=basePath%>/images/logo.png" width="249" height="55">
             </div>
         </div>
     </div>
@@ -47,13 +47,7 @@
     <!-------放大镜-------->
     <div id="leftbox">
         <div id="showbox">
-            <img src="images/shopdetail/img01.png" width="400" height="550"/>
-            <img src="images/shopdetail/img02.png" width="400" height="550"/>
-            <img src="images/shopdetail/img03.png" width="400" height="550"/>
-            <img src="images/shopdetail/img04.png" width="400" height="550"/>
-            <img src="images/shopdetail/img05.png" width="400" height="400"/>
-            <img src="images/shopdetail/img01.png" width="400" height="400"/>
-
+            <img src="${attraction.attractionImg}" width="400" height="550"/>
         </div><!--展示图片盒子-->
         <div id="showsum"></div><!--展示图片里边-->
         <p class="showpage">

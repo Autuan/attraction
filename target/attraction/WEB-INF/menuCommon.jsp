@@ -29,7 +29,7 @@
         <ul class="app-menu">
             <li class="treeview userTree"><a class="app-menu__item" href="/back/#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">用户管理</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item userList" href="/user/userList"><i class="icon fa fa-circle-o"></i> 已有用户</a></li>
+                    <li><a class="treeview-item userList" href="/admin/user/userList"><i class="icon fa fa-circle-o"></i> 已有用户</a></li>
                 </ul>
             </li>
             <%--<li class="treeview"><a class="app-menu__item" href="/back/#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">角色管理</span><i class="treeview-indicator fa fa-angle-right"></i></a>--%>
@@ -48,12 +48,6 @@
                 <ul class="treeview-menu">
                     <li><a class="treeview-item attractionList" href="/admin/attraction/listPage"><i class="icon fa fa-circle-o"></i> 景点列表</a></li>
                     <%--<li><a class="treeview-item attractionDetail" href="/error/noPower"><i class="icon fa fa-circle-o"></i> 部门操作</a></li>--%>
-                </ul>
-            </li>
-            <li class="treeview bugTree"><a class="app-menu__item" href="/back/#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">反馈问题</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-                <ul class="treeview-menu">
-                    <li><a class="treeview-item newBug" href="/feedback/newBug"><i class="icon fa fa-circle-o"></i> 反馈新问题</a></li>
-                    <li><a class="treeview-item bugList" href="/feedback/bugList"><i class="icon fa fa-circle-o"></i> 查询已提交问题</a></li>
                 </ul>
             </li>
         </ul>

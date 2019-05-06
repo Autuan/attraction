@@ -28,3 +28,5 @@ HELP.md
 ### VS Code ###
 .vscode/
 /src/test/java/
+src/main/java/com/attraction/modular/front/
+src/main/webapp/WEB-INF/front/

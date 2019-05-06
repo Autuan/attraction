@@ -47,13 +47,7 @@
     <!-------放大镜-------->
     <div id="leftbox">
         <div id="showbox">
-            <img src="images/shopdetail/img01.png" width="400" height="550"/>
-            <img src="images/shopdetail/img02.png" width="400" height="550"/>
-            <img src="images/shopdetail/img03.png" width="400" height="550"/>
-            <img src="images/shopdetail/img04.png" width="400" height="550"/>
-            <img src="images/shopdetail/img05.png" width="400" height="400"/>
-            <img src="images/shopdetail/img01.png" width="400" height="400"/>
-
+            <img src="${attraction.attractionImg}" width="400" height="550"/>
         </div><!--展示图片盒子-->
         <div id="showsum"></div><!--展示图片里边-->
         <p class="showpage">
@@ -82,6 +76,7 @@
 
         <div class="panelContainer">
             <div class="panel" id="panel01">
+                <p>中国工商银行</p>
                 ${attraction.attractionDetail}
             </div>
 

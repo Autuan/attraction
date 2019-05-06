@@ -8,7 +8,15 @@ import java.io.IOException;
 import java.util.List;
 
 public interface IRecommendService {
-    void updateUserAction(List<Attraction> attractions,Integer memberId,Integer score);
+    /**
+     * 修改用户的喜好城市
+     * @param attractions
+     * @param memberId
+     * @param score
+     */
+    void updateUserAttraction(List<Attraction> attractions, Integer memberId, Integer score);
+
+    void updateAttraction(List<Integer> attractionIds,Integer memberId,Integer score);
 
     List<Attraction> attractionRecommend(Integer memberId);
 }

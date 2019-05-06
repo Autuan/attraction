@@ -564,6 +564,76 @@ public class AttractionExample {
             addCriterion("attraction_detail not between", value1, value2, "attractionDetail");
             return (Criteria) this;
         }
+
+        public Criteria andAttractionImgIsNull() {
+            addCriterion("attraction_img is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgIsNotNull() {
+            addCriterion("attraction_img is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgEqualTo(String value) {
+            addCriterion("attraction_img =", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgNotEqualTo(String value) {
+            addCriterion("attraction_img <>", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgGreaterThan(String value) {
+            addCriterion("attraction_img >", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgGreaterThanOrEqualTo(String value) {
+            addCriterion("attraction_img >=", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgLessThan(String value) {
+            addCriterion("attraction_img <", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgLessThanOrEqualTo(String value) {
+            addCriterion("attraction_img <=", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgLike(String value) {
+            addCriterion("attraction_img like", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgNotLike(String value) {
+            addCriterion("attraction_img not like", value, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgIn(List<String> values) {
+            addCriterion("attraction_img in", values, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgNotIn(List<String> values) {
+            addCriterion("attraction_img not in", values, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgBetween(String value1, String value2) {
+            addCriterion("attraction_img between", value1, value2, "attractionImg");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionImgNotBetween(String value1, String value2) {
+            addCriterion("attraction_img not between", value1, value2, "attractionImg");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

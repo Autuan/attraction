@@ -6,79 +6,394 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java" line="105" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java" line="106" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="ceea5e83-d005-4fe9-885b-0fba25b735ba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/controller/CommentController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/entity/Comment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/entity/CommentExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/mapper/CommentMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/mapper/xml/CommentMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/ICommentService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/DIYRecommendMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/RecommendMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/xml/DIYRecommendMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/xml/RecommendMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/img.upload.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/front_index.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.detail.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/attraction/uploadImg.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/attraction_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/attraction_war_exploded.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/fileinput.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/attraction/fileinput.min.js" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/attraction.iml" afterPath="$PROJECT_DIR$/attraction.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/attraction.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/aurora-aotemai.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/DIYAttractionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/DIYAttractionMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/Attraction.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/Attraction.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/AttractionExample.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/AttractionExample.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/AttractionMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/AttractionMapper.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/EChartController.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/controller/FeedbackController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/controller/FeedbackController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/controller/FeedbackController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/entity/Feedback.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/mapper/FeedbackMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/mapper/xml/FeedbackMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/service/IFeedBackService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/service/impl/FeedBackServiceImpl.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/entity/Member.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/entity/MemberExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/mapper/MemberMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/mapper/xml/MemberMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/impl/MemberServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/impl/MemberServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/service/impl/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fastdfs-client.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fdfs_client.conf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springs.xml" afterPath="$PROJECT_DIR$/src/main/resources/springs.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/login.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dept/deptList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/feedback/bugList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/feedback/newBug.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menuCommon.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menuCommon.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu_admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu_admin.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/attraction.detail.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/attraction.detail.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index_jump.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/img.upload.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.reset.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.reset.min.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/front_index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/front_index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/admin/login.jsp" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/admin/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/attraction/detail.jsp" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/attraction/detail.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/BasePageController.class" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/BasePageController.class" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/UploadController.class" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/UploadController.class" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/controller/FeedbackController.class" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/controller/FeedbackController.class" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/generator/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/springs.xml" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/springs.xml" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menu.jsp" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/menu.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menuCommon.jsp" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/menuCommon.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menu_admin.jsp" afterPath="$PROJECT_DIR$/target/attraction/WEB-INF/menu_admin.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/css/attraction.detail.css" afterPath="$PROJECT_DIR$/target/attraction/css/attraction.detail.css" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/index.jsp" afterPath="$PROJECT_DIR$/target/attraction/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/index/index.jsp" afterPath="$PROJECT_DIR$/target/attraction/index/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/attraction/index_jump.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/base/controller/BasePageController.class" afterPath="$PROJECT_DIR$/target/classes/com/attraction/modular/base/controller/BasePageController.class" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/admin/login.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/attraction/detail.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/aop/SessionAspect.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/aop/SessionRefresh.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/entity/EchartBarResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/entity/EchartPieResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/entity/PageResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/interceptor/MyInterceptor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/FastDfsUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/FtpUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/IDUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/JsonUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/LoginUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/WebUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/ErrorCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/FastDFSClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/FastDFSException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/FileCheck.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/FileResponseData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/TrackerServerFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/common/util/fastDfs/TrackerServerPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/admin/controller/AdminPageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/BasePageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/EChartController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/base/controller/UploadController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/controller/DeptController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/Dept.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/TInterfaceInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/mapper/DeptMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/mapper/TInterfaceInfoMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/mapper/xml/DeptMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/mapper/xml/TInterfaceInfoMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/service/IDeptService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/dept/service/impl/DeptServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/controller/FeedbackController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/entity/Feedback.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/mapper/FeedbackMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/mapper/xml/FeedbackMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/service/IFeedBackService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/feedback/service/impl/FeedBackServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/entity/LoginTable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/mapper/UserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/mapper/xml/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/service/IUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/com/attraction/modular/user/service/impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/fastdfs-client.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/generator/generatorConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/mybatis-config.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/rebel.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/classes/springs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/dept/deptList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/error/noPower.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/feedback/bugList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/feedback/newBug.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/ECharts-3.0.0.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/FastInfoset-1.2.12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/HikariCP-2.7.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/IJPay-0.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/aliyun-java-sdk-core-3.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/asm-3.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/aspectjrt-1.8.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/bcprov-jdk15on-1.52.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/c3p0-0.9.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/castor-core-1.3.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/castor-xml-1.3.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-collections4-4.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-configuration-1.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-digester-2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-io-2.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-jexl-2.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-lang-2.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-lang3-3.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-net-3.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/core-3.3.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/curvesapi-1.04.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-core-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-bindings-soap-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-bindings-xml-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-databinding-jaxb-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-frontend-jaxws-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-frontend-simple-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-transports-http-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-ws-addr-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-ws-policy-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/cxf-rt-wsdl-3.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/druid-1.0.29.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/easypoi-annotation-3.1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/easypoi-base-3.1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/easypoi-web-3.1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/ecj-4.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/ehcache-core-2.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/excelutil-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/fastdfs-client-java-1.27.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/fastjson-1.2.44.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/groovy-all-2.4.12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/gson-2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/guava-16.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/httpclient-4.5.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/httpmime-4.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/hutool-all-4.1.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/icu4j-57.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/istack-commons-runtime-2.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/itext-2.1.7.js6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jackson-annotations-2.7.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jackson-core-2.7.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jackson-databind-2.7.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jai-imageio-core-1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jasperreports-6.4.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/javacsv-2.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/javase-3.3.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jaxb-core-2.2.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jaxb-impl-2.2.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jcommander-1.48.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jcommon-1.0.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jdom-1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jedis-2.9.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jfreechart-1.0.19.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jiguang-common-1.0.8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/joda-time-2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jpush-client-3.3.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/json-20170516.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jsqlparser-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/jxls-core-1.0.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/lucene-analyzers-common-4.5.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-3.4.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-generator-core-1.3.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-plus-2.1.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-plus-core-2.1.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-plus-generate-2.1.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-plus-support-2.1.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/neethi-3.0.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/netty-all-4.1.6.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/okhttp-3.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/okio-1.8.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/olap4j-0.9.7.309-JS-3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/pagehelper-5.1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/pinyin4j-2.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/poi-3.15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/poi-ooxml-3.15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/poi-ooxml-schemas-3.15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/quartz-2.2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/shiro-core-1.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/shiro-ehcache-1.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/shiro-spring-1.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/shiro-web-1.2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/snakeyaml-1.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-aop-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-beans-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-context-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-context-support-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-core-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-data-commons-1.13.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-data-keyvalue-1.2.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-data-redis-1.8.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-expression-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-jdbc-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-oxm-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-test-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-tx-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-web-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-webmvc-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/spring-websocket-4.3.10.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/stax-1.2.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/stax-api-1.0-2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/stax2-api-3.1.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/testng-6.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/velocity-1.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/weixin-java-common-2.8.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/woodstox-core-asl-4.3.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/wsdl4j-1.6.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xml-resolver-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xmlbeans-2.6.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xmlpull-1.1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xmlschema-core-2.1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/lib/xstream-1.4.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/member/member.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menu.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menuCommon.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/menu_admin.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/test.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/tlds/permission.tld" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/user/userList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/jquery-1.10.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/jquery.cookie.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/bootstrap/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/attraction.detail.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/bootstrap-editable.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/bootstrap-table.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/documentation.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/index.css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/index.reset.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/css/member.main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/index/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/attraction/attraction.detail.common.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap-editable.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap-paginator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap-table-editable.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap-table-zh-CN.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap-table.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/common.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/echarts.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/feedback/forBugList.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/feedback/forUserList.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/feedback/sse.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/jquery.cookie.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/jquery.mlens-1.0.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/magnifier.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/picbox.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/postbird-img-glass.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/wangEditor.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/attraction/js/zoomify.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/aop/SessionAspect.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/aop/SessionRefresh.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/entity/EchartBarResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/entity/EchartPieResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/entity/PageResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/interceptor/MyInterceptor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/FastDfsUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/FtpUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/IDUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/JsonUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/LoginUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/WebUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/ErrorCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/FastDFSClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/FastDFSException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/FileCheck.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/FileResponseData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/TrackerServerFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/common/util/fastDfs/TrackerServerPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/admin/controller/AdminPageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/base/controller/BasePageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/base/controller/EChartController.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/base/controller/UploadController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/controller/FeedbackController.class" afterPath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/controller/FeedbackController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springs.xml" afterPath="$PROJECT_DIR$/target/classes/springs.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/controller/DeptController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/Dept.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/TInterfaceInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/entity/TInterfaceInfoExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/mapper/DeptMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/mapper/TInterfaceInfoMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/mapper/xml/DeptMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/mapper/xml/TInterfaceInfoMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/service/IDeptService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/dept/service/impl/DeptServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/controller/FeedbackController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/entity/Feedback.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/mapper/FeedbackMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/mapper/xml/FeedbackMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/service/IFeedBackService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/feedback/service/impl/FeedBackServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/entity/LoginTable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/mapper/UserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/mapper/xml/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/service/IUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/attraction/modular/user/service/impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fastdfs-client.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rebel.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/attraction/modular/feedback/controller/FeedbackControllerTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/attraction/modular/feedback/controller/MessagePushTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,48 +412,61 @@
       <file leaf-file-name="admin_detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="110" column="6" lean-forward="true" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+            <state relative-caret-position="97">
+              <caret line="50" column="61" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadImg.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/uploadImg.js">
+      <file leaf-file-name="attraction.admin.detail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="303">
+              <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
               <folding>
-                <marker date="1557045294641" expanded="true" signature="1888:2021" ph="..." />
-                <marker date="1557045294641" expanded="true" signature="2114:2197" ph="..." />
+                <marker date="1557131120098" expanded="true" signature="2254:2279" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="img.upload.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/img.upload.css">
+      <file leaf-file-name="Attraction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/Attraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="100">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java">
+      <file leaf-file-name="AdminAttractionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="140" column="55" lean-forward="false" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#uploadFileFastDFS#0;class#UploadController#0" expanded="false" />
-                <element signature="docComment;method#uploadFileFastDFSAction#0;class#UploadController#0" expanded="false" />
-                <element signature="method#uploadFileFastDFSAction#0;class#UploadController#0" expanded="false" />
-                <element signature="docComment;method#uploadFileFTP#0;class#UploadController#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="148">
+              <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttractionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,36 +486,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>百度一下</find>
-      <find>c:forEach</find>
-      <find>display</find>
-      <find>searchBtn</find>
-      <find>jquery</find>
-      <find>basePath&quot;</find>
-      <find>session.get</find>
-      <find>basePath</find>
-      <find>LoginUtil</find>
-      <find>lom</find>
-      <find>examp</find>
-      <find>/search&quot;</find>
-      <find>/index&quot;</find>
-      <find>景点详情</find>
-      <find>http://192.168.1.12</find>
-      <find>像素的图片</find>
-      <find>more_upload_file</find>
-      <find>ver</find>
-      <find>请打开控制台查看传递参数</find>
-      <find>publishBtn</find>
-      <find>&quot;#btn</find>
-      <find>refres</find>
-      <find>rel</find>
-      <find>reload</find>
-      <find>imgBox</find>
       <find>imgUpload</find>
-      <find>uploadFTP</find>
-      <find>uploadFile</find>
-      <find>imgForm</find>
-      <find>uploadPic</find>
+      <find>hidden</find>
+      <find>&quot;attractionDetail&quot;</find>
+      <find>#attractionDetail</find>
+      <find>editor1</find>
+      <find>editorArea</find>
+      <find>游</find>
+      <find>img/logoBaidu.png</find>
+      <find>为您推荐</find>
+      <find>attractionImg</find>
+      <find>border-style:none</find>
+      <find>搜索</find>
+      <find>detail&quot;</find>
+      <find>shownext</find>
+      <find>updateAttraction</find>
+      <find>反馈新</find>
+      <find>daobc</find>
+      <find>必要参数为空</find>
+      <find>selectByMemberAndAttraction</find>
+      <find>panel01</find>
+      <find>attractionDetail</find>
+      <find>detail</find>
+      <find>attractionStar</find>
+      <find>attractionPrice</find>
+      <find>attractionSummary</find>
+      <find>attractionAddress</find>
+      <find>attractionName</find>
+      <find>中国工商银行</find>
+      <find>images/index_img/logo.gif</find>
+      <find>logo.pn</find>
     </findStrings>
     <replaceStrings>
       <replace>(&quot;#errorTip&quot;).html</replace>
@@ -198,6 +526,7 @@
     <dirStrings>
       <dir>D:\IdeaWorkSpace\feedback\src\main\java\com\aurora\dept\mapper\xml</dir>
       <dir>E:\branch\mine\attraction\src\main\java\com\attraction\modular\base\service</dir>
+      <dir>E:\branch\mine\attraction</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -211,57 +540,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/IMemberService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/impl/MemberServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/common/interceptor/MyInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/admin/controller/AdminPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/dept/controller/DeptController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/AttractionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/feedback/newBug.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/menuCommon.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/addraction.admin.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.detail.common.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/mapper/CommentMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/ICommentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/controller/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/attraction.detail.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.detail.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/common/util/QiNiuUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/common/util/QiniuUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/common/util/QiNiuConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/qiniu.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/springs.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/xml/DIYRecommendMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/RecommendMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/DIYRecommendMapper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/DIYAttractionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index_jump.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/imgFileupload.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/img.upload.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/uploadImg.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/menuCommon.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/entity/Member.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/impl/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index.reset.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/front_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/EChartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp" />
       </list>
     </option>
   </component>
@@ -299,18 +628,13 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="attraction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="attraction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="attraction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -321,10 +645,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -415,16 +738,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,7 +761,7 @@
               <item name="attraction" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
@@ -460,127 +773,7 @@
               <item name="attraction" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="attraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.mahout:mahout-mr:0.11.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="attraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.mahout:mahout-mr:0.11.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="mahout-mr-0.11.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -603,6 +796,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.RemoteServersConfigurable" />
     <property name="SearchEverywhereHistoryKey" value="FastDfsUtilTest&#9;RUN_CONFIGURATION&#9;FastDfsUtilTest.testUpload" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/attraction.iml" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -611,27 +805,27 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.attraction.modular" />
-      <recent name="com.attraction.modular.admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\branch\mine\attraction\src\main\webapp\js\attraction" />
-      <recent name="E:\branch\mine\attraction\src\main\webapp\css" />
-      <recent name="E:\branch\mine\attraction\src\main\java\com\attraction\modular\recommend\mapper\xml" />
-      <recent name="E:\branch\mine\attraction\src\main\webapp\WEB-INF\member" />
-      <recent name="E:\branch\mine\attraction\src\main\webapp\WEB-INF\attraction" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.attraction.modular.attraction.mapper" />
-      <recent name="com.aurora.common.entity" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\branch\mine\attraction\src\main\webapp\js\attraction" />
       <recent name="E:\branch\mine\attraction\src\main\webapp\WEB-INF\admin" />
       <recent name="E:\branch\mine\attraction\src\main\java\com\attraction\modular\base\controller" />
       <recent name="D:\IdeaWorkSpace\feedback\src\main\webapp\js" />
       <recent name="D:\IdeaWorkSpace\feedback\src\main\java\com\aurora\user\mapper\xml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.attraction.modular" />
+      <recent name="com.attraction.modular.admin" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.attraction.modular.attraction.mapper" />
+      <recent name="com.aurora.common.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\branch\mine\attraction\src\main\webapp\images" />
+      <recent name="E:\branch\mine\attraction\src\main\webapp\css" />
+      <recent name="E:\branch\mine\attraction\src\main\webapp\js\attraction" />
+      <recent name="E:\branch\mine\attraction\src\main\java\com\attraction\modular\recommend\mapper\xml" />
+      <recent name="E:\branch\mine\attraction\src\main\webapp\WEB-INF\member" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1034,6 +1228,7 @@
       <workItem from="1556877487157" duration="343000" />
       <workItem from="1556877898415" duration="2614000" />
       <workItem from="1557017587702" duration="18625000" />
+      <workItem from="1557114389849" duration="12588000" />
     </task>
     <task id="LOCAL-00001" summary="景点管理">
       <created>1556768429589</created>
@@ -1078,7 +1273,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431460000" />
+    <option name="totallyTimeSpent" value="444048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1090,16 +1285,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3848684" sideWeight="0.5136157" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1107,19 +1301,19 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3848684" sideWeight="0.48638427" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3848684" sideWeight="0.48638427" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53289473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5575658" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.47860962" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.47860962" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347957" sideWeight="0.5213904" order="2" side_tool="true" content_ui="tabs" />
@@ -1174,6 +1368,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1186,207 +1406,17 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="161" />
+      <option name="time" value="188" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/attraction.detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="550" column="19" lean-forward="false" selection-start-line="550" selection-start-column="19" selection-end-line="550" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberPageController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/member/member.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8500">
-          <caret line="340" column="10" lean-forward="false" selection-start-line="340" selection-start-column="10" selection-end-line="340" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/common/util/QiNiuUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/qiniu.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/common/util/QiNiuConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractRecommender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar!/com/mysql/jdbc/jdbc2/optional/MysqlDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/impl/neighborhood/ThresholdUserNeighborhood.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/impl/recommender/GenericUserBasedRecommender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/impl/similarity/AbstractSimilarity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/recommender/Recommender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/common/exception/CheckException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mahout/mahout-mr/0.11.1/mahout-mr-0.11.1.jar!/org/apache/mahout/cf/taste/model/DataModel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="104" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="99" column="61" lean-forward="true" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="138" column="31" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/Attraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="238" column="16" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/xml/DIYRecommendMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1556874766655" expanded="true" signature="5786:6641" ph="update recommend_tab... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/RecommendMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/mapper/DIYRecommendMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/AttractionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="73" column="8" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="73" selection-end-column="8" />
-          <folding>
-            <marker date="1556767636669" expanded="true" signature="3974:4084" ph="select from attraction_tab" />
-            <marker date="1556767636669" expanded="true" signature="4171:4235" ph="delete from attraction_tab... " />
-            <marker date="1556767636669" expanded="true" signature="4360:4386" ph="delete from attraction_tab... " />
-            <marker date="1556767636669" expanded="true" signature="4588:5019" ph="insert into attraction_tab... " />
-            <marker date="1556767636669" expanded="true" signature="6683:6718" ph="select count... attraction_tab" />
-            <marker date="1556767636669" expanded="true" signature="8006:8490" ph="update attraction_tab... " />
-            <marker date="1556767636669" expanded="true" signature="8723:9527" ph="update attraction_tab... " />
-            <marker date="1556767636669" expanded="true" signature="9648:10086" ph="update attraction_tab... " />
           </folding>
         </state>
       </provider>
@@ -1398,107 +1428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="60" column="53" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/DIYAttractionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9025">
           <caret line="361" column="24" lean-forward="false" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1556879122522" expanded="true" signature="3464:3543" ph="select from attraction_tab" />
-            <marker date="1556879122522" expanded="true" signature="3721:3792" ph="select from attraction_tab" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <marker date="1528093310947" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528093310947" expanded="false" signature="162:711" ph="..." />
-            <marker date="1528093310947" expanded="false" signature="1105:1116" ph=" { " />
-            <marker date="1528093310947" expanded="false" signature="1137:1143" ph=" }" />
-            <marker date="1528093310947" expanded="false" signature="1206:1217" ph=" { " />
-            <marker date="1528093310947" expanded="false" signature="1237:1243" ph=" }" />
-            <marker date="1528093310947" expanded="true" signature="1365:1421" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="1500:1559" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="1669:1728" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="1822:1893" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="2033:2638" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="2788:4133" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="4212:4389" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="4485:4943" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="5008:6165" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="6250:6846" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="6929:7500" ph="{...}" />
-            <marker date="1528093310947" expanded="true" signature="7560:7893" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1511,14 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/common/util/FtpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1527,83 +1452,393 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/verUpload.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/verUpload.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/imgFileupload.js" />
+    <entry file="file://$PROJECT_DIR$/logs/aurora-aotemai.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attraction.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/feedback/controller/FeedbackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/imgFileupload.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3500">
-          <caret line="167" column="45" lean-forward="true" selection-start-line="167" selection-start-column="45" selection-end-line="167" selection-end-column="45" />
+        <state relative-caret-position="116">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/front_index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="68" />
+        <state relative-caret-position="75">
+          <caret line="148" column="55" lean-forward="true" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
           <folding>
-            <element signature="e#898#899#0" expanded="false" />
-            <element signature="e#937#938#0" expanded="false" />
-            <element signature="e#1596#1597#0" expanded="false" />
-            <element signature="e#1635#1636#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1739#1740#0" expanded="false" />
+            <element signature="e#6371#6372#0" expanded="false" />
+            <element signature="e#6410#6411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/entity/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="method#toString#0;class#Member#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/menuCommon.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/service/IMemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/member/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/member/info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="255" column="0" lean-forward="true" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+          <folding>
+            <element signature="e#7709#7813#0#HTML" expanded="false" />
+            <element signature="e#7853#8303#0#HTML" expanded="false" />
+            <element signature="e#8339#8650#0#HTML" expanded="false" />
+            <element signature="e#8686#8991#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/ICommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/IRecommendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/recommend/service/impl/RecommendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/img.upload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="175">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/fileinput.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="140" column="55" lean-forward="false" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#uploadFileFastDFS#0;class#UploadController#0" expanded="false" />
-            <element signature="docComment;method#uploadFileFastDFSAction#0;class#UploadController#0" expanded="false" />
-            <element signature="method#uploadFileFastDFSAction#0;class#UploadController#0" expanded="false" />
-            <element signature="docComment;method#uploadFileFTP#0;class#UploadController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="110" column="6" lean-forward="true" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+        <state relative-caret-position="116">
+          <caret line="11" column="20412" lean-forward="false" selection-start-line="11" selection-start-column="20412" selection-end-line="11" selection-end-column="20412" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/uploadImg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="-651">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <marker date="1557045294641" expanded="true" signature="1888:2021" ph="..." />
             <marker date="1557045294641" expanded="true" signature="2114:2197" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/DIYAttractionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/AttractionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/DIYAttractionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/mapper/xml/AttractionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+          <folding>
+            <element signature="n#resultMap#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#sql#1;n#mapper#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.reset.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="518" lean-forward="false" selection-start-line="2" selection-start-column="518" selection-end-line="2" selection-end-column="518" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/BasePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/front_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fastdfs-client.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="63" column="11" lean-forward="false" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1894#1895#0" expanded="false" />
+            <element signature="e#1947#1948#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/EChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/IAttractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/comment/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="116" column="67" lean-forward="false" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/base/service/IBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/service/impl/AttractionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2355#2356#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2613#2614#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#2805#2806#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/admin_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="50" column="61" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/attraction/attraction.admin.detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+          <folding>
+            <marker date="1557131120098" expanded="true" signature="2254:2279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AttractionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/entity/Attraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/attraction/modular/attraction/controller/AdminAttractionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/attraction/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

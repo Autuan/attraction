@@ -1,7 +1,6 @@
 package com.attraction.modular.user.service.impl;
 
 import com.attraction.common.util.LoginUtil;
-import com.attraction.modular.feedback.mapper.FeedbackMapper;
 import com.attraction.modular.user.entity.LoginTable;
 import com.attraction.modular.user.entity.User;
 import com.attraction.modular.user.mapper.UserMapper;
@@ -14,13 +13,9 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements IUserService {
-    // ---------------------- 自动注入 ----------------------
     @Autowired
     private UserMapper userMapper;
-    @Autowired
-    private FeedbackMapper feedbackMapper;
 
-    // ---------------------- 业务逻辑 ----------------------
     @Override
     public Integer haveThisUser(String logname) {
         return userMapper.haveThisUser(logname);
@@ -67,9 +62,6 @@ public class UserServiceImpl implements IUserService {
     @Override
     @Transactional
     public void deleteUser(Integer userId) {
-        //修改该用户名下所有反馈到管理员
-        feedbackMapper.updateActiveMan(userId);
-        feedbackMapper.updatePushMan(userId);
         userMapper.deleteByPrimaryKey(userId);
     }
 

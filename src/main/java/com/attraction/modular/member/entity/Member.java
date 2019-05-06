@@ -9,17 +9,18 @@ public class Member implements Serializable {
 
     private String password;
 
+    private String hobby;
+
     private String name;
 
     private static final long serialVersionUID = 1L;
 
-    public Member(String account, String password) {
-        this.name = account;
-        this.account = account;
-        this.password = password;
+    public Member() {
     }
 
-    public Member() {
+    public Member(String account, String password) {
+        this.account = account;
+        this.password = password;
     }
 
     public Integer getId() {
@@ -46,6 +47,14 @@ public class Member implements Serializable {
         this.password = password == null ? null : password.trim();
     }
 
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby == null ? null : hobby.trim();
+    }
+
     public String getName() {
         return name;
     }
@@ -63,6 +72,7 @@ public class Member implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", account=").append(account);
         sb.append(", password=").append(password);
+        sb.append(", hobby=").append(hobby);
         sb.append(", name=").append(name);
         sb.append("]");
         return sb.toString();

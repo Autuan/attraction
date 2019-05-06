@@ -1,5 +1,6 @@
 package com.attraction.modular.member.controller;
 
+import cn.hutool.core.util.StrUtil;
 import com.attraction.common.entity.ReturnResult;
 import com.attraction.common.util.LoginUtil;
 import com.attraction.modular.attraction.entity.Attraction;
@@ -7,17 +8,20 @@ import com.attraction.modular.attraction.service.IAttractionService;
 import com.attraction.modular.base.service.IBaseService;
 import com.attraction.modular.member.entity.Member;
 import com.attraction.modular.member.service.IMemberService;
+import com.attraction.modular.recommend.service.IRecommendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
 import java.util.List;
+
+import static java.util.stream.Collectors.toList;
 
 @Validated
 @Controller
@@ -27,6 +31,8 @@ public class MemberController {
     private IMemberService memberService;
     @Autowired
     private IAttractionService attractionService;
+    @Autowired
+    private IRecommendService recommendService;
     @Autowired
     private IBaseService baseService;
     /**
@@ -53,13 +59,21 @@ public class MemberController {
      */
     @RequestMapping("/updateMember")
     @ResponseBody
-    public ReturnResult updateMember(Member member){
+    public ReturnResult updateMember(Member member, String favAttraction,
+                                     HttpSession session){
         try {
             memberService.updateMember(member);
+            // 根据喜好城市更新推荐索引
+            if(StrUtil.isNotBlank(favAttraction)) {
+            List<Integer> favAttractionIds = Arrays.asList(favAttraction.split(","))
+                    .stream().map(Integer::valueOf).collect(toList());
+            recommendService.updateAttraction(favAttractionIds,member.getId(),5);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return ReturnResult.error();
         }
+        session.setAttribute("member",member);
         return ReturnResult.ok();
     }
 

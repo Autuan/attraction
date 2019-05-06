@@ -5,10 +5,12 @@ import com.attraction.modular.comment.entity.Comment;
 import com.attraction.modular.comment.entity.CommentExample;
 import com.attraction.modular.comment.mapper.CommentMapper;
 import com.attraction.modular.comment.service.ICommentService;
+import com.attraction.modular.recommend.service.IRecommendService;
 import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Slf4j
@@ -16,13 +18,24 @@ import java.util.List;
 public class CommentServiceImpl implements ICommentService {
     @Autowired
     private CommentMapper commentMapper;
+    @Autowired
+    private IRecommendService recommendService;
 
     @Override
     public int comment(Comment comment) {
         if(null != comment.getId()) {
             return commentMapper.updateByPrimaryKey(comment);
         }
-        return commentMapper.insertSelective(comment);
+        int update = commentMapper.insertSelective(comment);
+        int score;
+        switch (comment.getType()) {
+            case 1:score = 5;break;
+            case 2:score = 3;break;
+            case 3:score = 0;break;
+            default:score = 1;break;
+        }
+        recommendService.updateAttraction(Arrays.asList(comment.getAttractionId()),comment.getMemberId(),score);
+        return update;
     }
 
     @Override

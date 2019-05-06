@@ -3,6 +3,7 @@ package com.attraction.modular.member.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.attraction.common.exception.CheckException;
+import com.attraction.common.util.LoginUtil;
 import com.attraction.modular.member.entity.Member;
 import com.attraction.modular.member.entity.MemberExample;
 import com.attraction.modular.member.mapper.MemberMapper;
@@ -35,6 +36,14 @@ public class MemberServiceImpl implements IMemberService {
      */
     @Override
     public void updateMember(Member member) {
+        if(StrUtil.isBlank(member.getPassword())) {
+            member.setPassword(null);
+        } else {
+            member.setPassword(LoginUtil.getSHA256Str(member.getPassword()));
+        }
+        if(StrUtil.isBlank(member.getName())) {
+            member.setName(null);
+        }
         memberMapper.updateByPrimaryKeySelective(member);
     }
 

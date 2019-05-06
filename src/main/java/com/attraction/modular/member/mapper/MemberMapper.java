@@ -4,9 +4,7 @@ import com.attraction.modular.member.entity.Member;
 import com.attraction.modular.member.entity.MemberExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface MemberMapper {
     int countByExample(MemberExample example);
 

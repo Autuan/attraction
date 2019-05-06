@@ -216,17 +216,15 @@
             </div>
             <div style="    margin-left: 350px;">
                     <form action="post" id="memberForm">
-                        <input type="hidden" name="id" value="${member.id}">
+                        <input type="hidden" id="id" name="id" value="${member.id}">
                         <p class="form formFont">登录账号:${member.account}</p>
                         <br><br>
                         <p class="form formFont">用户昵称:</p>
                         <p class="form"><input type="text" id="user" placeholder="请输入用户昵称" value=":${member.name}"></p>
-                        <p class="form formFont">原始密码:</p>
-                        <p class="form"><input type="password" id="passwd" placeholder="请输入原始密码"></p>
                         <p class="form formFont">&nbsp;&nbsp;新密码:</p>
                         <p class="form"><input type="password" id="passwd" placeholder="请输入新密码"></p>
                         <p class="form formFont">个人爱好:</p>
-                        <p class="form"><input type="text" id="passwd" placeholder="请输入个人爱好"></p>
+                        <p class="form"><input type="text" id="hobby" placeholder="请输入个人爱好" value="${member.hobby}"></p>
                         <p class="form formFont">喜欢城市:</p><br>
                         <div class="form">
                             <c:forEach items="${cityList}" var="city">
@@ -241,7 +239,7 @@
 
                         <p id="errorTip"></p>
                         <br>
-                        <input type="button" value="修改信息" class="btn logBtn" onclick="login_confirm()"
+                        <input type="button" value="修改信息" class="btn logBtn" onclick="update_confirm()"
                                style="margin-right: 20px;">
                         <input type="button" value="删除账号" class="btn logBtn" onclick='signin()' id="btn">
                     </form>
@@ -255,20 +253,6 @@
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script>
     var basePath = $("#basePath").val();
-    // 显示注册
-    function showSignIn() {
-        $("#errorTip").html("");
-        $(".logBtn").hide();
-        $(".signBtn").show();
-        $("#isSignIn").val(1);
-    }
-    // 显示登录
-    function showLogIn() {
-        $("#errorTip").html("");
-        $(".logBtn").show();
-        $(".signBtn").hide();
-        $("#isSignIn").val(0);
-    }
 
     showLogIn();
     var onoff = true//根据此布尔值判断当前为注册状态还是登录状态
@@ -318,21 +302,6 @@
     function login() {
         showLogIn();
         if (onoff) {
-            /*let request = new XMLHttpRequest()
-            let url = ""
-            request.open("post", url, true)
-            let data = new FormData()
-            data.append("user", user.value)
-            data.append("passwd", passwd.value)
-            request.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                    if (this.responseText == false)
-                        hint()
-                    else
-                        window.location.href = this.responseText;
-                }
-            }
-            request.send(data)*/
         } else {
             let status = document.getElementById("status").getElementsByTagName("i")
             confirm.style.height = 0
@@ -342,44 +311,29 @@
         }
     }
 
-    // 登录
-    function login_confirm() {
-        var errorMsg = checkParam();
+    function update_confirm() {
+        // var errorMsg = checkParam();
+        var errorMsg = 'success';
         if(errorMsg === "success") {
-            $("#errorTip").html("登录中,请稍后");
-            var url = basePath + "/member/login";
+            $("#errorTip").html("正在修改");
+            var url = basePath + "/member/updateMember";
+            var checkVal = '';
+            $('.checkBoxInput:checkbox').each(function() {
+                if ($(this).prop('checked') ==true) {
+                    checkVal += $(this).val() + ",";
+                }
+            });
             $.post(url,{
+                id : $("#id").val(),
                 username : $("#user").val(),
                 password : $("#passwd").val(),
+                hobby : $("#hobby").val(),
+                favAttraction : checkVal,
             },function (obj) {
                 if(obj.code === "200") {
-                    $("#errorTip").html("登录成功");
+                    $("#errorTip").html("修改成功");
                     window.setTimeout( function(){
                         location.href=basePath;
-                    }, 1500 );
-                } else {
-                    $("#errorTip").html(obj.msg);
-                }
-            },"json")
-        } else {
-            $("#errorTip").html(errorMsg);
-        }
-    }
-    // 注册
-    function signin_confirm() {
-        var errorMsg = checkParam();
-        if(errorMsg === "success") {
-            $("#errorTip").html("注册中,请稍后");
-            var url = basePath + "/member/sign";
-            $.post(url,{
-                username : $("#user").val(),
-                password : $("#passwd").val(),
-                confirmPassword : $("#confirm-passwd").val(),
-            },function (obj) {
-                if(obj.code === "200") {
-                    $("#errorTip").html("注册成功");
-                    window.setTimeout( function(){
-                    location.reload();
                     }, 1500 );
                 } else {
                     $("#errorTip").html(obj.msg);

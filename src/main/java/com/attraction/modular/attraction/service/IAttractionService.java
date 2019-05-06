@@ -22,5 +22,5 @@ public interface IAttractionService {
 
     List<Attraction> search(String keyword);
 
-    List<Attraction> selectByExample(List<Integer> ids);
+    List<Attraction> selectByIds(List<Integer> ids);
 }

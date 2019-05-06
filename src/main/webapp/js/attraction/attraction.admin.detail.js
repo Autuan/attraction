@@ -36,14 +36,24 @@ $(function () {
 $(function () {
     $("#publishBtn").click(function () {
         var content = editor1.txt.html();
-        $("#attractionDetail").val(content);
         var url ;
         if($("#id").val()==="") {
             url = "/admin/attraction/insertAttraction";
         } else {
             url = "/admin/attraction/updateAttraction";
         }
-        var data = $("#articleForm").serialize();
+        // var data = $("#articleForm").serialize();
+        // data += '&attractionDetail=' + content;
+        var data = {
+            id : $("#id").val(),
+            attractionName : $("#attractionName").val(),
+            attractionStar : $("#attractionStar").val(),
+            attractionAddress : $("#attractionAddress").val(),
+            attractionSummary : $("#attractionSummary").val(),
+            attractionPrice : $("#attractionPrice").val(),
+            attractionImg : $("#attractionImg").val(),
+            attractionDetail : content,
+        }
         $.post(url, data, function (obj) {
             if (obj == "success") {
                 alert("成功");
@@ -52,5 +62,19 @@ $(function () {
                 alert("操作失败,请稍后重试");
             }
         }, "text");
+    });
+
+    $("#imgUpload").fileinput({
+        language: "zh",
+        showCaption: false, // 不显示本地文件名
+        allowedFileTypes: ['image'], // 只允许上传图片
+        allowedFileExtensions: ["jpg", "jpeg", "png", "gif"],
+        initialPreview: ['<img style="width: 100%;height: 100%;" src="'+$("#attractionImg").val()+'" />'],
+        initialPreviewFileType:'image',
+        uploadUrl: "/file/uploadFTP" //上传图片的服务器地址
+    }).on('fileuploaded', function(event, data, previewId, index){
+        var response = data.response;
+        var attractionImg = response.data[0];
+        $("#attractionImg").val(attractionImg);
     });
 });

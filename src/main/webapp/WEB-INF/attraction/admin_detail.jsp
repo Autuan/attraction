@@ -3,7 +3,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>反馈新问题</title>
+    <title>景点管理</title>
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.css">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-table.min.css" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-editable.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/img.upload.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/fileinput.min.css">
 
     <style>
         .chooseTitle{
@@ -32,6 +32,7 @@
                     <div>
                         <form class="form-horizontal" id="articleForm">
                             <input type="hidden" name="id" id="id" value="${attraction.id}" />
+                            <input type="hidden" name="attractionImg" id="attractionImg" value="${attraction.attractionImg}" />
                             <div class="form-group">
                                 <label for="attractionName" class="col-sm-2 control-label">名称</label>
                                 <div class="col-sm-10">
@@ -70,20 +71,14 @@
                             <div class="form-group">
                                 <label for="attractionPrice" class="col-sm-2 control-label">图片上传</label>
                                 <div class="col-sm-10">
-                                    <div id="upBox">
-                                        <div id="inputBox"><input type="file" title="请选择图片" id="file" multiple accept="image/png,image/jpg,image/gif,image/JPEG"/>点击选择图片</div>
-                                        <div id="imgBox">
-                                        </div>
-                                        <button type="button" id="imgUploadBtn">上传</button>
-                                    </div>
+                                    <input type="file" name="uploadFile" id="imgUpload" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="hidden" name="attractionDetail" id="attractionDetail" value="${attraction.attractionDetail}">
                                 <label for="detail" class="col-sm-2 control-label">景点详情</label>
                                 <div class="col-sm-offset-2 col-sm-10" id="detail">
                                     <div id="editorArea">
-                                        ${attraction.attractionDetail}
+                                        <div>${attraction.attractionDetail}</div>
                                     </div>
                                 </div>
                             </div>
@@ -105,21 +100,8 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/main.js"></script>
 <script src="${pageContext.request.contextPath}/js/wangEditor.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/attraction/attraction.admin.detail.js"></script>
 <script src="${pageContext.request.contextPath}/js/attraction/uploadImg.js"></script>
-<script>
-    imgUpload({
-        inputId:'file', //input框id
-        imgBox:'imgBox', //图片容器id
-        buttonId:'imgUploadBtn', //提交按钮id
-        upUrl:'/file/uploadFTP',  //提交地址
-        data:'uploadFile', //参数名
-        // 成功回调
-        successFu:function (obj) {
-            console.log("图片上传成功!");
-            console.log(obj)
-        }
-    })
-</script>
+<script src="${pageContext.request.contextPath}/js/attraction/fileinput.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/attraction/attraction.admin.detail.js"></script>
 </body>
 </html>

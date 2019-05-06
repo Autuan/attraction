@@ -45,8 +45,4 @@ public class BasePageController {
         return "/member/member";
     }
 
-    @RequestMapping("/detail")
-    public String detail() {
-        return "/attraction/detail";
-    }
 }

@@ -31,7 +31,7 @@
 </div>
 <div class="search1">
     <div class="imglog">
-        <img src="img/logoBaidu.png"/>
+        <img src="<%=basePath%>/images/logo.png"/>
     </div>
     <div>
         <input type="text" class="txtingput" id="searchWord"/>
@@ -40,15 +40,14 @@
 </div>
 <div class="imglist1">
     <div class="recommendDiv" id="searchTip">搜索结果:</div>
-    <ul class="clear" id="searchResult">
-    </ul>
+    <ul class="clear" id="searchResult"></ul>
 
     <div class="recommendDiv">为您推荐:</div>
     <ul class="clear">
         <c:forEach items="${recommends}" var="recommend">
         <li>
             <a href="/attraction/detail?id=${recommend.id}">
-                <img src="<%=basePath%>/images/temp/1.jpg"/>
+                <img src="${recommend.attractionImg}"/>
                 <span>${recommend.attractionName}</span>
             </a>
         </li>
@@ -69,7 +68,7 @@
                 var list =obj.data;
                 var str = '';
                 for(var i=0;i<list.length;i++){
-                    str += '<li><a href="/attraction/detail?id='+list[i].id+'"><img src="<%=basePath%>/images/temp/2.jpg"/>'
+                    str += '<li><a href="/attraction/detail?id='+list[i].id+'"><img src="'+list[i].attractionImg+'"/>'
                         +'<span>'+list[i].attractionName+'</span></a></li>'
                 }
                 if(list.length == 0) {

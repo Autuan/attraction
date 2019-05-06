@@ -18,6 +18,8 @@ public class Attraction implements Serializable {
 
     private String attractionDetail;
 
+    private String attractionImg;
+
     private static final long serialVersionUID = 1L;
 
     public Integer getId() {
@@ -76,6 +78,14 @@ public class Attraction implements Serializable {
         this.attractionDetail = attractionDetail == null ? null : attractionDetail.trim();
     }
 
+    public String getAttractionImg() {
+        return attractionImg;
+    }
+
+    public void setAttractionImg(String attractionImg) {
+        this.attractionImg = attractionImg == null ? null : attractionImg.trim();
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -89,6 +99,7 @@ public class Attraction implements Serializable {
         sb.append(", attractionSummary=").append(attractionSummary);
         sb.append(", attractionPrice=").append(attractionPrice);
         sb.append(", attractionDetail=").append(attractionDetail);
+        sb.append(", attractionImg=").append(attractionImg);
         sb.append("]");
         return sb.toString();
     }

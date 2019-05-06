@@ -9,6 +9,7 @@
     <result column="attraction_summary" property="attractionSummary" jdbcType="VARCHAR" />
     <result column="attraction_price" property="attractionPrice" jdbcType="DECIMAL" />
     <result column="attraction_detail" property="attractionDetail" jdbcType="VARCHAR" />
+    <result column="attraction_img" property="attractionImg" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -70,7 +71,7 @@
   </sql>
   <sql id="Base_Column_List" >
     id, attraction_name, attraction_star, attraction_address, attraction_summary, attraction_price, 
-    attraction_detail
+    attraction_detail, attraction_img
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.attraction.modular.attraction.entity.AttractionExample" >
     select
@@ -106,10 +107,10 @@
   <insert id="insert" parameterType="com.attraction.modular.attraction.entity.Attraction" >
     insert into attraction_tab (id, attraction_name, attraction_star, 
       attraction_address, attraction_summary, attraction_price, 
-      attraction_detail)
+      attraction_detail, attraction_img)
     values (#{id,jdbcType=INTEGER}, #{attractionName,jdbcType=VARCHAR}, #{attractionStar,jdbcType=INTEGER}, 
       #{attractionAddress,jdbcType=VARCHAR}, #{attractionSummary,jdbcType=VARCHAR}, #{attractionPrice,jdbcType=DECIMAL}, 
-      #{attractionDetail,jdbcType=VARCHAR})
+      #{attractionDetail,jdbcType=VARCHAR}, #{attractionImg,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.attraction.modular.attraction.entity.Attraction" >
     insert into attraction_tab
@@ -135,6 +136,9 @@
       <if test="attractionDetail != null" >
         attraction_detail,
       </if>
+      <if test="attractionImg != null" >
+        attraction_img,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -157,6 +161,9 @@
       </if>
       <if test="attractionDetail != null" >
         #{attractionDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="attractionImg != null" >
+        #{attractionImg,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -190,6 +197,9 @@
       <if test="record.attractionDetail != null" >
         attraction_detail = #{record.attractionDetail,jdbcType=VARCHAR},
       </if>
+      <if test="record.attractionImg != null" >
+        attraction_img = #{record.attractionImg,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -203,7 +213,8 @@
       attraction_address = #{record.attractionAddress,jdbcType=VARCHAR},
       attraction_summary = #{record.attractionSummary,jdbcType=VARCHAR},
       attraction_price = #{record.attractionPrice,jdbcType=DECIMAL},
-      attraction_detail = #{record.attractionDetail,jdbcType=VARCHAR}
+      attraction_detail = #{record.attractionDetail,jdbcType=VARCHAR},
+      attraction_img = #{record.attractionImg,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -229,6 +240,9 @@
       <if test="attractionDetail != null" >
         attraction_detail = #{attractionDetail,jdbcType=VARCHAR},
       </if>
+      <if test="attractionImg != null" >
+        attraction_img = #{attractionImg,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -239,7 +253,8 @@
       attraction_address = #{attractionAddress,jdbcType=VARCHAR},
       attraction_summary = #{attractionSummary,jdbcType=VARCHAR},
       attraction_price = #{attractionPrice,jdbcType=DECIMAL},
-      attraction_detail = #{attractionDetail,jdbcType=VARCHAR}
+      attraction_detail = #{attractionDetail,jdbcType=VARCHAR},
+      attraction_img = #{attractionImg,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

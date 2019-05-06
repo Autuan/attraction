@@ -1,5 +1,6 @@
 package com.attraction.modular.base.controller;
 
+import cn.hutool.http.HttpRequest;
 import com.attraction.common.util.FtpUtil;
 import com.attraction.common.util.IDUtils;
 import com.attraction.common.util.fastDfs.*;
@@ -26,7 +27,7 @@ import java.util.*;
 public class UploadController {
     // ---------------------- 常量 ----------------------
 
-    private String FTP_ADDRESS = "192.168.14.114";
+    private String FTP_ADDRESS = "127.0.0.1";
 
     private String FTP_PORT = "21";
 
@@ -105,11 +106,9 @@ public class UploadController {
     public String uploadFileFastDFSAction(byte[] byteFile, String ext_file) {
         // 拼接服务区的文件路径
         StringBuffer sbPath = new StringBuffer();
-        sbPath.append("http://www.daobc.cn:9102");
         try {
             // 初始化文件资源
             ClientGlobal.init("/usr/local/fdfs_client.conf");
-//           ClientGlobal.init("D:\\IdeaWorkSpace\\feedback\\src\\main\\resources\\fdfs_client.conf");
 
             // 链接FastDFS服务器，创建tracker和Stroage
             TrackerClient trackerClient = new TrackerClient();
@@ -129,7 +128,6 @@ public class UploadController {
         return sbPath.toString();
     }
 
-
     /**
      * wangeditor FTP 方式 图片上传
      *
@@ -138,14 +136,13 @@ public class UploadController {
      */
     @RequestMapping("/uploadFTP")
     @ResponseBody
-    public Map uploadFileFTP(MultipartFile[] uploadFile) {
+    public Map uploadFileFTP(MultipartFile uploadFile) {
         Map resultMap = new HashMap<>(16);
         try {
             List<String> data = new LinkedList<>();
-            for (MultipartFile file : uploadFile) {
                 // 生成一个新的文件名
                 // 取原始文件名
-                String oldName = file.getOriginalFilename();
+                String oldName = uploadFile.getOriginalFilename();
                 // 生成新文件名
                 // UUID.randomUUID()
                 String newName = IDUtils.genImageName();
@@ -153,7 +150,7 @@ public class UploadController {
                 // 图片上传
                 String imagePath = new DateTime().toString("/yyyy/MM/dd");
                 boolean result = FtpUtil.uploadFile(FTP_ADDRESS, Integer.valueOf(FTP_PORT), FTP_USERNAME,
-                        FTP_PASSWORD, FTP_BASE_PATH, imagePath, newName, file.getInputStream());
+                        FTP_PASSWORD, FTP_BASE_PATH, imagePath, newName, uploadFile.getInputStream());
                 // 返回结果
                 if (!result) {
                     resultMap.put("errno", 1);
@@ -162,8 +159,7 @@ public class UploadController {
                     resultMap.put("errno", 0);
                     data.add(IMAGE_BASE_URL + imagePath + "/" + newName);
                 }
-            }
-            resultMap.put("data", data);
+                resultMap.put("data", data);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,9 +1,7 @@
 package com.attraction.modular.recommend.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.StrUtil;
 import com.attraction.modular.attraction.entity.Attraction;
-import com.attraction.modular.attraction.entity.AttractionExample;
 import com.attraction.modular.attraction.service.IAttractionService;
 import com.attraction.modular.recommend.entity.Recommend;
 import com.attraction.modular.recommend.entity.RecommendExample;
@@ -25,16 +23,10 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
-import java.util.function.Function;
 
 import static java.util.stream.Collectors.partitioningBy;
 import static java.util.stream.Collectors.toList;
@@ -51,17 +43,23 @@ public class RecommendServiceImpl implements IRecommendService {
     private IAttractionService attractionService;
 
     @Override
-    public void updateUserAction(List<Attraction> attractions, Integer memberId, Integer score) {
-        // 删除之前保存的记录,保证同一景点同一用户只有一条记录
-        RecommendExample example = new RecommendExample();
-        example.createCriteria()
-                .andMemberIdEqualTo(memberId)
-                .andAttractionIdIn(attractions.stream().map(Attraction::getId).collect(toList()));
-        recommendMapper.deleteByExample(example);
+    public void updateUserAttraction(List<Attraction> attractions, Integer memberId, Integer score) {
+        List<Integer> attractionIds = attractions.stream().map(Attraction::getId).collect(toList());
+        updateAttraction(attractionIds,memberId,score);
+    }
 
-        for (Attraction attraction : attractions) {
+    @Override
+    public void updateAttraction(List<Integer> attractionIds, Integer memberId, Integer score) {
+        // 删除之前保存的记录,保证同一景点同一用户只有一条记录
+//        RecommendExample example = new RecommendExample();
+//        example.createCriteria()
+//                .andMemberIdEqualTo(memberId)
+//                .andAttractionIdIn(attractionIds);
+//        recommendMapper.deleteByExample(example);
+
+        for (Integer attractionId : attractionIds) {
             Recommend recommend = new Recommend();
-            recommend.setAttractionId(attraction.getId());
+            recommend.setAttractionId(attractionId);
             recommend.setMemberId(memberId);
             recommend.setScore(score);
             recommend.setRecordTime(new Date());
@@ -100,7 +98,10 @@ public class RecommendServiceImpl implements IRecommendService {
                     .map(RecommendedItem::getItemID)
                     .map(Long::intValue)
                     .collect(toList());
-            return attractionService.selectByExample(itemIds);
+            if (CollUtil.isNotEmpty(itemIds)) {
+                return attractionService.selectByIds(itemIds);
+            }
+            return null;
         } catch (TasteException e) {
             e.printStackTrace();
             return null;

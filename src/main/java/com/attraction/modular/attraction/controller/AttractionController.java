@@ -1,14 +1,12 @@
 package com.attraction.modular.attraction.controller;
 
 import com.attraction.common.entity.ReturnResult;
-import com.attraction.common.exception.CheckException;
 import com.attraction.modular.attraction.entity.Attraction;
 import com.attraction.modular.attraction.service.IAttractionService;
 import com.attraction.modular.comment.entity.Comment;
 import com.attraction.modular.comment.service.ICommentService;
 import com.attraction.modular.member.entity.Member;
 import com.attraction.modular.recommend.service.IRecommendService;
-import org.apache.mahout.cf.taste.common.TasteException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -37,6 +35,9 @@ public class AttractionController {
         Member member = (Member) session.getAttribute("member");
         mav.addObject("member", member);
         List<Comment> commentList = commentService.listComment(id);
+        if (null != member) {
+            recommendService.updateAttraction(Arrays.asList(id), member.getId(), 2);
+        }
         mav.addObject("commentList", commentList);
         mav.setViewName("/attraction/detail");
         return mav;
@@ -62,7 +63,7 @@ public class AttractionController {
         List<Attraction> search = attractionService.search(keyword);
         Member member = (Member) session.getAttribute("member");
         if (null != member) {
-            recommendService.updateUserAction(search, member.getId(), 1);
+            recommendService.updateUserAttraction(search, member.getId(), 1);
         }
         return ReturnResult.ok(search);
     }

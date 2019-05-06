@@ -4,6 +4,7 @@ import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.ExportParams;
 import com.attraction.aop.SessionRefresh;
 import com.attraction.common.entity.PageResult;
+import com.attraction.common.entity.ReturnResult;
 import com.attraction.common.util.JsonUtils;
 import com.attraction.common.util.LoginUtil;
 import com.attraction.common.util.WebUtil;
@@ -141,10 +142,9 @@ public class UserController {
      * @param user
      * @return
      */
-    @SessionRefresh
     @RequestMapping("/updateUser")
     @ResponseBody
-    public String updateUser(User user){
+    public ReturnResult updateUser(User user){
         try {
             if (user.getUserPassword().length() > 30) {
                 user.setUserPassword(null);
@@ -152,9 +152,9 @@ public class UserController {
             userService.updateUser(user);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return ReturnResult.error("失败");
         }
-        return "success";
+        return ReturnResult.ok();
     }
 
      /**
@@ -224,49 +224,8 @@ public class UserController {
         return userService.getUserById(userId);
     }
 
-    @RequestMapping("generatorExcel")
-    @SessionRefresh
-    public String generatorExcel(HttpServletResponse response)throws IOException {
-        String title = "用户列表--畅游管理系统";
-        // 生成Excel文档
-        List<User> list = userService.getUserList(0, 999);
-        Workbook workbook =  ExcelExportUtil.exportExcel(new ExportParams(title,"用户列表"),
-                User .class, list);
-
-
-        //同理可以设置数据行
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        try {
-            workbook.write(os);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        byte[] content = os.toByteArray();
-        InputStream is = new ByteArrayInputStream(content);
-        // 设置response参数，可以打开下载页面
-        response.reset();
-        response.setContentType("application/vnd.ms-excel;charset=utf-8");
-        response.setHeader("Content-Disposition", "attachment;filename="+ new String(( title + WebUtil.getCurrentTimeNoMark() + ".xls").getBytes(), "ISO8859-1"));
-        ServletOutputStream out = response.getOutputStream();
-        BufferedInputStream bis = null;
-        BufferedOutputStream bos = null;
-        try {
-            bis = new BufferedInputStream(is);
-            bos = new BufferedOutputStream(out);
-            byte[] buff = new byte[2048];
-            int bytesRead;
-            // Simple read/write loop.
-            while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {
-                bos.write(buff, 0, bytesRead);
-            }
-        } catch (final IOException e) {
-            throw e;
-        } finally {
-            if (bis != null)
-                bis.close();
-            if (bos != null)
-                bos.close();
-        }
-        return null;
+    @RequestMapping("/userList")
+    public String userPage(){
+        return "/user/userList";
     }
 }

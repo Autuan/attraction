@@ -73,7 +73,6 @@ public class AdminAttractionController {
      * @param attraction
      * @return
      */
-    @SessionRefresh
     @RequestMapping("/updateAttraction")
     @ResponseBody
     public String updateAttraction(Attraction attraction){

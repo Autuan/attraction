@@ -1,5 +1,6 @@
 package com.attraction.modular.attraction.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import com.attraction.modular.attraction.entity.Attraction;
 import com.attraction.modular.attraction.entity.AttractionExample;
 import com.attraction.modular.attraction.mapper.AttractionMapper;
@@ -43,7 +44,12 @@ public class AttractionServiceImpl implements IAttractionService {
 
     @Override
     public void update(Attraction attraction) {
-        attractionMapper.updateByPrimaryKey(attraction);
+        String detail = attraction.getAttractionDetail();
+        if(StrUtil.isNotBlank(detail)) {
+            detail=detail.replace("%","%25");
+            attraction.setAttractionDetail(detail);
+        }
+        attractionMapper.updateByPrimaryKeySelective(attraction);
     }
 
     @Override
@@ -72,7 +78,7 @@ public class AttractionServiceImpl implements IAttractionService {
     }
 
     @Override
-    public List<Attraction> selectByExample(List<Integer> ids) {
+    public List<Attraction> selectByIds(List<Integer> ids) {
         AttractionExample example = new AttractionExample();
         example.createCriteria()
                 .andIdIn(ids);
