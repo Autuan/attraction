@@ -59,23 +59,10 @@ public interface IUserService {
     void deleteUser(Integer userId);
 
     /**
-     * 查询提交人
-     * @return
-     */
-    List<User> getPushMan();
-
-    /**
      * 取主管和技术人员
      * @return
      */
     List<User> getAdminAndTechnology();
-
-    /**
-     * 根据部门id取用户列表
-     * @param deptId
-     * @return
-     */
-    List<User> getUserByDeptId(Integer deptId);
 
     /**
      * 根据用户主键查找用户

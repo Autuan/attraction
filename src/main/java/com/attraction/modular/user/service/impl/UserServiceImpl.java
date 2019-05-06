@@ -66,18 +66,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public List<User> getPushMan() {
-        return userMapper.getPushMan();
-    }
-
-    @Override
     public List<User> getAdminAndTechnology() {
         return userMapper.getAdminAndTechnology();
-    }
-
-    @Override
-    public List<User> getUserByDeptId(Integer deptId) {
-        return userMapper.getUserByDeptId(deptId);
     }
 
     @Override

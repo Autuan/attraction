@@ -2,6 +2,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+            + request.getContextPath() + "/";
+%>
 <head>
     <meta charset="UTF-8">
 
@@ -77,22 +84,6 @@
                                     <input type="text" class="form-control" id="user_username" name="userUsername" placeholder="请输入用户名">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="user_role" class="col-sm-2 control-label">角色</label>
-                                <div class="col-sm-10">
-                                    <select name="userRole" id="user_role">
-                                        <option value="0">工作人员</option>
-                                        <option value="2">技术人员</option>
-                                        <option value="1">主管</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="deptId" class="col-sm-2 control-label">部门</label>
-                                <div class="col-sm-10">
-                                    <select name='deptId' id="deptId"></select>
-                                </div>
-                            </div>
                         </form>
 
                         <div class="modal-footer">
@@ -135,7 +126,7 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap-table-zh-CN.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap-editable.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap-table-editable.js"></script>
-<script src="${pageContext.request.contextPath}/js/feedback/forUserList.js"></script>
+<script src="${pageContext.request.contextPath}/js/attraction/forUserList.js"></script>
 <%--<script src="${pageContext.request.contextPath}/js/feedback/sse.js"></script>--%>
 </body>
 </html>

@@ -39,8 +39,6 @@ public interface UserMapper {
 
     List<User> getAdminAndTechnology();
 
-    List<User> getUserByDeptId(Integer deptId);
-
     User getUserByName(String name);
 
     int countAll();

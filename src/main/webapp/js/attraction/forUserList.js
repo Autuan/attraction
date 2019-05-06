@@ -100,12 +100,6 @@ window.operateEvents = {
     }
 };
 $(function(){
-    // excel 生成
-    $("#saveBtn").click(function () {
-        var url="/user/generatorExcel";
-        window.open(url);
-    });
-
     $("#myModal").modal("hide");
     $('#blogTable').bootstrapTable('destroy').bootstrapTable({
         url: '/admin/user/getUserList',   //url一般是请求后台的url地址,调用ajax获取数据。此处我用本地的json数据来填充表格。
@@ -192,7 +186,7 @@ $(function(){
         },onEditableSave: function (field, row, oldValue, $el) {
             $.ajax({
                 type: "post",
-                url: "/user/updateUser",
+                url: "/admin/user/updateUser",
                 data: row,
                 dataType: 'text',
                 success: function (obj) {

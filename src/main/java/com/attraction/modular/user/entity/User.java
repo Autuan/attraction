@@ -17,11 +17,8 @@ public class User implements Serializable {
     @Excel(name = "用户姓名")
     private String userUsername;
 
-    @Excel(name="用户权限",replace = {"工作人员_0","主管_1","技术人员_2"})
+    @Excel(name="用户权限")
     private Integer userRole;
-
-    @Excel(name = "部门编号")
-    private Integer deptId;
 
     private String roleName;
 
@@ -85,14 +82,6 @@ public class User implements Serializable {
         this.userRole = userRole;
     }
 
-    public Integer getDeptId() {
-        return deptId;
-    }
-
-    public void setDeptId(Integer deptId) {
-        this.deptId = deptId;
-    }
-
     @Override
     public String toString() {
         return "User{" +
@@ -101,7 +90,6 @@ public class User implements Serializable {
                 ", userPassword='" + userPassword + '\'' +
                 ", userUsername='" + userUsername + '\'' +
                 ", userRole=" + userRole +
-                ", deptId=" + deptId +
                 '}';
     }
 }

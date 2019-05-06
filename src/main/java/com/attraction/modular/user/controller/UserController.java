@@ -169,10 +169,12 @@ public class UserController {
             // 验证用户id
             Integer name = (Integer) request.getSession().getAttribute("userId");
             if ( userId.equals(1)) {
-                return "cannotDeleteAdmin"; // id 为 1  是默认管理员,不可以删除
+                // id 为 1  是默认管理员,不可以删除
+                return "cannotDeleteAdmin";
             }
             if ( userId.equals(name)) {
-                return "cannotDeleteYourself"; // 登陆用户不可以删除自己
+                // 登陆用户不可以删除自己
+                return "cannotDeleteYourself";
             }
             userService.deleteUser(userId);
         } catch (Exception e) {
@@ -183,28 +185,6 @@ public class UserController {
     }
 
     /**
-     * 取提交人
-     * @return
-     */
-    @RequestMapping("/getPushMan")
-    @ResponseBody
-    public List<User> getPushMan(){
-        return userService.getPushMan();
-    }
-
-    /**
-     * 根据部门id取用户列表
-     * @param deptId
-     * @return
-     */
-    @RequestMapping("/getUserByDeptId")
-    @ResponseBody
-    public List<User> getUserByDeptId(Integer deptId){
-        return userService.getUserByDeptId(deptId);
-    }
-
-    /**
-     * 获取主管及技术人员列表
      * @return
      */
     @RequestMapping("/getAdminAndTechnology")

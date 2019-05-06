@@ -31,7 +31,7 @@
   <jsp:include page="./menuCommon.jsp"></jsp:include>
     <main class="app-content">
       <div th:include="managerCommon :: contentTitle"></div>
-      欢迎使用畅游管理系统,请点击左侧反馈错误进行反馈
+      欢迎使用畅游管理系统
     </main>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
