@@ -1,6 +1,7 @@
 package com.attraction.modular.comment.entity;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CommentExample {
@@ -164,6 +165,126 @@ public class CommentExample {
             return (Criteria) this;
         }
 
+        public Criteria andMemberIdIsNull() {
+            addCriterion("member_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdIsNotNull() {
+            addCriterion("member_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdEqualTo(Integer value) {
+            addCriterion("member_id =", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdNotEqualTo(Integer value) {
+            addCriterion("member_id <>", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdGreaterThan(Integer value) {
+            addCriterion("member_id >", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("member_id >=", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdLessThan(Integer value) {
+            addCriterion("member_id <", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdLessThanOrEqualTo(Integer value) {
+            addCriterion("member_id <=", value, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdIn(List<Integer> values) {
+            addCriterion("member_id in", values, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdNotIn(List<Integer> values) {
+            addCriterion("member_id not in", values, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdBetween(Integer value1, Integer value2) {
+            addCriterion("member_id between", value1, value2, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andMemberIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("member_id not between", value1, value2, "memberId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdIsNull() {
+            addCriterion("attraction_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdIsNotNull() {
+            addCriterion("attraction_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdEqualTo(Integer value) {
+            addCriterion("attraction_id =", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdNotEqualTo(Integer value) {
+            addCriterion("attraction_id <>", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdGreaterThan(Integer value) {
+            addCriterion("attraction_id >", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("attraction_id >=", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdLessThan(Integer value) {
+            addCriterion("attraction_id <", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdLessThanOrEqualTo(Integer value) {
+            addCriterion("attraction_id <=", value, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdIn(List<Integer> values) {
+            addCriterion("attraction_id in", values, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdNotIn(List<Integer> values) {
+            addCriterion("attraction_id not in", values, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdBetween(Integer value1, Integer value2) {
+            addCriterion("attraction_id between", value1, value2, "attractionId");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("attraction_id not between", value1, value2, "attractionId");
+            return (Criteria) this;
+        }
+
         public Criteria andTypeIsNull() {
             addCriterion("type is null");
             return (Criteria) this;
@@ -294,123 +415,133 @@ public class CommentExample {
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdIsNull() {
-            addCriterion("attraction_id is null");
+        public Criteria andCommentImgIsNull() {
+            addCriterion("comment_img is null");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdIsNotNull() {
-            addCriterion("attraction_id is not null");
+        public Criteria andCommentImgIsNotNull() {
+            addCriterion("comment_img is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdEqualTo(Integer value) {
-            addCriterion("attraction_id =", value, "attractionId");
+        public Criteria andCommentImgEqualTo(String value) {
+            addCriterion("comment_img =", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdNotEqualTo(Integer value) {
-            addCriterion("attraction_id <>", value, "attractionId");
+        public Criteria andCommentImgNotEqualTo(String value) {
+            addCriterion("comment_img <>", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdGreaterThan(Integer value) {
-            addCriterion("attraction_id >", value, "attractionId");
+        public Criteria andCommentImgGreaterThan(String value) {
+            addCriterion("comment_img >", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("attraction_id >=", value, "attractionId");
+        public Criteria andCommentImgGreaterThanOrEqualTo(String value) {
+            addCriterion("comment_img >=", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdLessThan(Integer value) {
-            addCriterion("attraction_id <", value, "attractionId");
+        public Criteria andCommentImgLessThan(String value) {
+            addCriterion("comment_img <", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdLessThanOrEqualTo(Integer value) {
-            addCriterion("attraction_id <=", value, "attractionId");
+        public Criteria andCommentImgLessThanOrEqualTo(String value) {
+            addCriterion("comment_img <=", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdIn(List<Integer> values) {
-            addCriterion("attraction_id in", values, "attractionId");
+        public Criteria andCommentImgLike(String value) {
+            addCriterion("comment_img like", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdNotIn(List<Integer> values) {
-            addCriterion("attraction_id not in", values, "attractionId");
+        public Criteria andCommentImgNotLike(String value) {
+            addCriterion("comment_img not like", value, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdBetween(Integer value1, Integer value2) {
-            addCriterion("attraction_id between", value1, value2, "attractionId");
+        public Criteria andCommentImgIn(List<String> values) {
+            addCriterion("comment_img in", values, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andAttractionIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("attraction_id not between", value1, value2, "attractionId");
+        public Criteria andCommentImgNotIn(List<String> values) {
+            addCriterion("comment_img not in", values, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdIsNull() {
-            addCriterion("member_id is null");
+        public Criteria andCommentImgBetween(String value1, String value2) {
+            addCriterion("comment_img between", value1, value2, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdIsNotNull() {
-            addCriterion("member_id is not null");
+        public Criteria andCommentImgNotBetween(String value1, String value2) {
+            addCriterion("comment_img not between", value1, value2, "commentImg");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdEqualTo(Integer value) {
-            addCriterion("member_id =", value, "memberId");
+        public Criteria andUpdateTimeIsNull() {
+            addCriterion("update_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdNotEqualTo(Integer value) {
-            addCriterion("member_id <>", value, "memberId");
+        public Criteria andUpdateTimeIsNotNull() {
+            addCriterion("update_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdGreaterThan(Integer value) {
-            addCriterion("member_id >", value, "memberId");
+        public Criteria andUpdateTimeEqualTo(Date value) {
+            addCriterion("update_time =", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("member_id >=", value, "memberId");
+        public Criteria andUpdateTimeNotEqualTo(Date value) {
+            addCriterion("update_time <>", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdLessThan(Integer value) {
-            addCriterion("member_id <", value, "memberId");
+        public Criteria andUpdateTimeGreaterThan(Date value) {
+            addCriterion("update_time >", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdLessThanOrEqualTo(Integer value) {
-            addCriterion("member_id <=", value, "memberId");
+        public Criteria andUpdateTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("update_time >=", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdIn(List<Integer> values) {
-            addCriterion("member_id in", values, "memberId");
+        public Criteria andUpdateTimeLessThan(Date value) {
+            addCriterion("update_time <", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdNotIn(List<Integer> values) {
-            addCriterion("member_id not in", values, "memberId");
+        public Criteria andUpdateTimeLessThanOrEqualTo(Date value) {
+            addCriterion("update_time <=", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdBetween(Integer value1, Integer value2) {
-            addCriterion("member_id between", value1, value2, "memberId");
+        public Criteria andUpdateTimeIn(List<Date> values) {
+            addCriterion("update_time in", values, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMemberIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("member_id not between", value1, value2, "memberId");
+        public Criteria andUpdateTimeNotIn(List<Date> values) {
+            addCriterion("update_time not in", values, "updateTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andUpdateTimeBetween(Date value1, Date value2) {
+            addCriterion("update_time between", value1, value2, "updateTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andUpdateTimeNotBetween(Date value1, Date value2) {
+            addCriterion("update_time not between", value1, value2, "updateTime");
             return (Criteria) this;
         }
     }

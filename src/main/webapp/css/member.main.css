@@ -70,6 +70,7 @@ input:focus{
     background: linear-gradient(45deg, #9a444e, #e06267);
     position: relative;
     float: right;
+    margin-top: -20px;
 }
 #login #status{
     width: 90px;

@@ -2,6 +2,7 @@ package com.attraction.modular.attraction.controller;
 
 import com.attraction.aop.SessionRefresh;
 import com.attraction.common.entity.PageResult;
+import com.attraction.common.entity.ReturnResult;
 import com.attraction.modular.attraction.entity.Attraction;
 import com.attraction.modular.attraction.service.IAttractionService;
 import com.attraction.modular.attraction.entity.Attraction;
@@ -51,21 +52,20 @@ public class AdminAttractionController {
     }
 
     /**
-     * 增加新部门
+     * 增加
      * @param attraction
      * @return
      */
-    @SessionRefresh
     @RequestMapping("/insertAttraction")
     @ResponseBody
-    public String insertAttraction(Attraction attraction) {
+    public ReturnResult insertAttraction(Attraction attraction) {
         try {
             attractionService.insert(attraction);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return ReturnResult.error();
         }
-        return "success";
+        return ReturnResult.ok();
     }
 
     /**
@@ -75,31 +75,30 @@ public class AdminAttractionController {
      */
     @RequestMapping("/updateAttraction")
     @ResponseBody
-    public String updateAttraction(Attraction attraction){
+    public ReturnResult updateAttraction(Attraction attraction){
         try {
             attractionService.update(attraction);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return ReturnResult.error();
         }
-        return "success";
+        return ReturnResult.ok();
     }
 
     /**
-     * 删除部门
+     * 删除
      * @param id
      * @return
      */
-    @SessionRefresh
     @RequestMapping("/deleteAttraction")
     @ResponseBody
-    public String deleteAttraction(Integer id){
+    public ReturnResult deleteAttraction(Integer id){
         try {
             attractionService.delete(id);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return ReturnResult.error();
         }
-        return "success";
+        return ReturnResult.ok();
     }
 }

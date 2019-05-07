@@ -163,25 +163,24 @@ public class UserController {
      */
     @RequestMapping("/deleteUser")
     @ResponseBody
-    @SessionRefresh
-    public String deleteUser(Integer userId,HttpServletRequest request){
+    public ReturnResult deleteUser(Integer userId,HttpServletRequest request){
         try {
             // 验证用户id
             Integer name = (Integer) request.getSession().getAttribute("userId");
             if ( userId.equals(1)) {
                 // id 为 1  是默认管理员,不可以删除
-                return "cannotDeleteAdmin";
+                return ReturnResult.error("管理员账户不能删除");
             }
             if ( userId.equals(name)) {
                 // 登陆用户不可以删除自己
-                return "cannotDeleteYourself";
+                return ReturnResult.error("不能删除自己");
             }
             userService.deleteUser(userId);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return ReturnResult.error("操作失败");
         }
-        return "success";
+        return ReturnResult.ok();
     }
 
     /**

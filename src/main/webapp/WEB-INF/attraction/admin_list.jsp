@@ -57,16 +57,16 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">提示信息</h4>
+                    <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" id="deleteDeptId"/>
+                    <input type="hidden" id="id"/>
                     <p>您确认要删除吗？</p>
                 </div>
                 <div class="modal-footer">
                     <input type="hidden" id="url"/>
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                    <button type="button" onclick="deleteDept()" class="btn btn-success" data-dismiss="modal">确定
+                    <button type="button" onclick="deleteFun()" class="btn btn-success" data-dismiss="modal">确定
                     </button>
                 </div>
             </div><!-- /.modal-content -->

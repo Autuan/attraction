@@ -4,9 +4,7 @@ import com.attraction.modular.comment.entity.Comment;
 import com.attraction.modular.comment.entity.CommentExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface CommentMapper {
     int countByExample(CommentExample example);
 

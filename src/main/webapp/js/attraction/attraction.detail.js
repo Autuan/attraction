@@ -40,6 +40,24 @@ function activeBaiduMap() {
     });
     globalMap = map;
 }
+$("#imgUpload").fileinput({
+    language: "zh",
+    showCaption: false, // 不显示本地文件名
+    allowedFileTypes: ['image'], // 只允许上传图片
+    allowedFileExtensions: ["jpg", "jpeg", "png", "gif"],
+    // initialPreview: array,
+    initialPreviewFileType: 'image',
+    msgFilesTooMany: "选择上传的文件数量{n} 超过允许的最大数值{m}！",
+    maxFileCount: 5, //表示允许同时上传的最大文件个数
+    uploadUrl: "/file/uploadFTP" //上传图片的服务器地址
+}).on('fileuploaded', function (event, data, previewId, index) {
+    var response = data.response;
+    var image = response.data[0];
+    var commentImg = $("#commentImg").val();
+    commentImg += image + ",";
+    $("#commentImg").val(commentImg);
+});
+
 $(function () {
     $("#commentDiv").hide();
     var commentUrl = "/comment/selectByMemberAndAttraction";
@@ -53,6 +71,12 @@ $(function () {
             $("input[name='type'][value='"+comment.type+"']").attr("checked",true);
             $("#commentContent").val(comment.content);
             $("#commentId").val(comment.id);
+            // var array = [];
+            // for(var i=0;i<comment.imgList.length;i++) {
+            //     var str = '<img style="width: 100%;height: 100%;" src="'+comment.imgList[i]+'" />';
+            //     console.log(str);
+            //     array.push(str);
+            // }
         }
     },"json");
     $("#commentAttraction").click(function () {
@@ -84,6 +108,7 @@ $(function () {
             content:$("#commentContent").val(),
             attractionId:$("#attractionId").val(),
             memberId:$("#memberId").val(),
+            commentImg:$("#commentImg").val(),
             id:$("#commentId").val(),
         };
         $.post(url,data,function (obj) {
@@ -102,5 +127,5 @@ $(function () {
             case '1' : driveRoute();break;
             case '2' : walkRoute();break;
         }
-    })
+    });
 });

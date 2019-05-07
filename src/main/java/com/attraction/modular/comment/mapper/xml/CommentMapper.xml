@@ -3,10 +3,12 @@
 <mapper namespace="com.attraction.modular.comment.mapper.CommentMapper" >
   <resultMap id="BaseResultMap" type="com.attraction.modular.comment.entity.Comment" >
     <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="attraction_id" property="attractionId" jdbcType="INTEGER" />
     <result column="type" property="type" jdbcType="INTEGER" />
     <result column="content" property="content" jdbcType="VARCHAR" />
-    <result column="attraction_id" property="attractionId" jdbcType="INTEGER" />
-    <result column="member_id" property="memberId" jdbcType="INTEGER" />
+    <result column="comment_img" property="commentImg" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -67,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, type, content, attraction_id, member_id
+    id, member_id, attraction_id, type, content, comment_img, update_time
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.attraction.modular.comment.entity.CommentExample" >
     select
@@ -101,10 +103,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.attraction.modular.comment.entity.Comment" >
-    insert into comment_tab (id, type, content, 
-      attraction_id, member_id)
-    values (#{id,jdbcType=INTEGER}, #{type,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, 
-      #{attractionId,jdbcType=INTEGER}, #{memberId,jdbcType=INTEGER})
+    insert into comment_tab (id, member_id, attraction_id, 
+      type, content, comment_img, 
+      update_time)
+    values (#{id,jdbcType=INTEGER}, #{memberId,jdbcType=INTEGER}, #{attractionId,jdbcType=INTEGER}, 
+      #{type,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{commentImg,jdbcType=VARCHAR}, 
+      #{updateTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.attraction.modular.comment.entity.Comment" >
     insert into comment_tab
@@ -112,22 +116,34 @@
       <if test="id != null" >
         id,
       </if>
+      <if test="memberId != null" >
+        member_id,
+      </if>
+      <if test="attractionId != null" >
+        attraction_id,
+      </if>
       <if test="type != null" >
         type,
       </if>
       <if test="content != null" >
         content,
       </if>
-      <if test="attractionId != null" >
-        attraction_id,
+      <if test="commentImg != null" >
+        comment_img,
       </if>
-      <if test="memberId != null" >
-        member_id,
+      <if test="updateTime != null" >
+        update_time,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
+      </if>
+      <if test="memberId != null" >
+        #{memberId,jdbcType=INTEGER},
+      </if>
+      <if test="attractionId != null" >
+        #{attractionId,jdbcType=INTEGER},
       </if>
       <if test="type != null" >
         #{type,jdbcType=INTEGER},
@@ -135,11 +151,11 @@
       <if test="content != null" >
         #{content,jdbcType=VARCHAR},
       </if>
-      <if test="attractionId != null" >
-        #{attractionId,jdbcType=INTEGER},
+      <if test="commentImg != null" >
+        #{commentImg,jdbcType=VARCHAR},
       </if>
-      <if test="memberId != null" >
-        #{memberId,jdbcType=INTEGER},
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -155,17 +171,23 @@
       <if test="record.id != null" >
         id = #{record.id,jdbcType=INTEGER},
       </if>
+      <if test="record.memberId != null" >
+        member_id = #{record.memberId,jdbcType=INTEGER},
+      </if>
+      <if test="record.attractionId != null" >
+        attraction_id = #{record.attractionId,jdbcType=INTEGER},
+      </if>
       <if test="record.type != null" >
         type = #{record.type,jdbcType=INTEGER},
       </if>
       <if test="record.content != null" >
         content = #{record.content,jdbcType=VARCHAR},
       </if>
-      <if test="record.attractionId != null" >
-        attraction_id = #{record.attractionId,jdbcType=INTEGER},
+      <if test="record.commentImg != null" >
+        comment_img = #{record.commentImg,jdbcType=VARCHAR},
       </if>
-      <if test="record.memberId != null" >
-        member_id = #{record.memberId,jdbcType=INTEGER},
+      <if test="record.updateTime != null" >
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -175,10 +197,12 @@
   <update id="updateByExample" parameterType="map" >
     update comment_tab
     set id = #{record.id,jdbcType=INTEGER},
+      member_id = #{record.memberId,jdbcType=INTEGER},
+      attraction_id = #{record.attractionId,jdbcType=INTEGER},
       type = #{record.type,jdbcType=INTEGER},
       content = #{record.content,jdbcType=VARCHAR},
-      attraction_id = #{record.attractionId,jdbcType=INTEGER},
-      member_id = #{record.memberId,jdbcType=INTEGER}
+      comment_img = #{record.commentImg,jdbcType=VARCHAR},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -186,27 +210,35 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.attraction.modular.comment.entity.Comment" >
     update comment_tab
     <set >
+      <if test="memberId != null" >
+        member_id = #{memberId,jdbcType=INTEGER},
+      </if>
+      <if test="attractionId != null" >
+        attraction_id = #{attractionId,jdbcType=INTEGER},
+      </if>
       <if test="type != null" >
         type = #{type,jdbcType=INTEGER},
       </if>
       <if test="content != null" >
         content = #{content,jdbcType=VARCHAR},
       </if>
-      <if test="attractionId != null" >
-        attraction_id = #{attractionId,jdbcType=INTEGER},
+      <if test="commentImg != null" >
+        comment_img = #{commentImg,jdbcType=VARCHAR},
       </if>
-      <if test="memberId != null" >
-        member_id = #{memberId,jdbcType=INTEGER},
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.attraction.modular.comment.entity.Comment" >
     update comment_tab
-    set type = #{type,jdbcType=INTEGER},
-      content = #{content,jdbcType=VARCHAR},
+    set member_id = #{memberId,jdbcType=INTEGER},
       attraction_id = #{attractionId,jdbcType=INTEGER},
-      member_id = #{memberId,jdbcType=INTEGER}
+      type = #{type,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      comment_img = #{commentImg,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

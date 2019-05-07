@@ -18,6 +18,10 @@ public class Attraction implements Serializable {
 
     private String attractionDetail;
 
+    private String attractionOpenTime;
+
+    private String attractionEndTime;
+
     private String attractionImg;
 
     private static final long serialVersionUID = 1L;
@@ -78,6 +82,22 @@ public class Attraction implements Serializable {
         this.attractionDetail = attractionDetail == null ? null : attractionDetail.trim();
     }
 
+    public String getAttractionOpenTime() {
+        return attractionOpenTime;
+    }
+
+    public void setAttractionOpenTime(String attractionOpenTime) {
+        this.attractionOpenTime = attractionOpenTime == null ? null : attractionOpenTime.trim();
+    }
+
+    public String getAttractionEndTime() {
+        return attractionEndTime;
+    }
+
+    public void setAttractionEndTime(String attractionEndTime) {
+        this.attractionEndTime = attractionEndTime == null ? null : attractionEndTime.trim();
+    }
+
     public String getAttractionImg() {
         return attractionImg;
     }
@@ -99,6 +119,8 @@ public class Attraction implements Serializable {
         sb.append(", attractionSummary=").append(attractionSummary);
         sb.append(", attractionPrice=").append(attractionPrice);
         sb.append(", attractionDetail=").append(attractionDetail);
+        sb.append(", attractionOpenTime=").append(attractionOpenTime);
+        sb.append(", attractionEndTime=").append(attractionEndTime);
         sb.append(", attractionImg=").append(attractionImg);
         sb.append("]");
         return sb.toString();

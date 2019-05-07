@@ -10,9 +10,11 @@
 %>
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="styleSheet" href="/css/member.main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>账号登录</title>
+    <title>个人信息</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/fileinput.min.css">
+    <%--<link type="text/css" rel="styleSheet" href="/css/member.main.css"/>--%>
     <style>
         * {
             margin: 0;
@@ -75,16 +77,15 @@
             font-family: "neo";
             overflow: hidden;
             box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.25);
-            position: fixed;
+            /*position: fixed;*/
             top: 50%;
             right: 50%;
-            margin-top: -250px;
-            margin-right: -490px;
+            margin: 0 auto;
         }
 
         #login {
             width: 100%;
-            height: 100%;
+            height: 1280px;
             min-height: 500px;
             background: linear-gradient(45deg, #9a444e, #e06267);
             position: relative;
@@ -128,63 +129,63 @@
 
         #bg {
             background: linear-gradient(45deg, #211136, #bf5853);
-            height: 100%;
+            height: 1380px;
         }
 
         /*提示*/
-        #hint {
-            width: 100%;
-            line-height: 70px;
-            background: linear-gradient(-90deg, #9b494d, #bf5853);
-            text-align: center;
-            font-size: 25px;
-            color: #fff;
-            box-shadow: 0 0 20px #733544;
-            display: none;
-            opacity: 0;
-            transition: .5s;
-            position: absolute;
-            top: 0;
-            z-index: 999;
-        }
+        /*#hint {*/
+            /*width: 100%;*/
+            /*line-height: 70px;*/
+            /*background: linear-gradient(-90deg, #9b494d, #bf5853);*/
+            /*text-align: center;*/
+            /*font-size: 25px;*/
+            /*color: #fff;*/
+            /*box-shadow: 0 0 20px #733544;*/
+            /*display: none;*/
+            /*opacity: 0;*/
+            /*transition: .5s;*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*z-index: 999;*/
+        /*}*/
 
         /* 响应式 */
-        @media screen and (max-width: 1000px ) {
-            #login_wrap {
-                width: 490px;
-                margin-right: -245px;
-            }
+        /*@media screen and (max-width: 1000px ) {*/
+            /*#login_wrap {*/
+                /*width: 490px;*/
+                /*margin-right: -245px;*/
+            /*}*/
 
-            #login {
-                width: 100%;
-            }
-        }
+            /*#login {*/
+                /*width: 100%;*/
+            /*}*/
+        /*}*/
 
-        @media screen and (max-width: 560px ) {
-            #login_wrap {
-                width: 330px;
-                margin-right: -165px;
-            }
+        /*@media screen and (max-width: 560px ) {*/
+            /*#login_wrap {*/
+                /*width: 330px;*/
+                /*margin-right: -165px;*/
+            /*}*/
 
-            #login span {
-                margin-left: -125px;
-            }
+            /*#login span {*/
+                /*margin-left: -125px;*/
+            /*}*/
 
-            .form input {
-                width: 250px;
-            }
+            /*.form input {*/
+                /*width: 250px;*/
+            /*}*/
 
-            .btn {
-                width: 113px;
-            }
-        }
+            /*.btn {*/
+                /*width: 113px;*/
+            /*}*/
+        /*}*/
 
-        @media screen and (max-width: 345px ) {
-            #login_wrap {
-                width: 290px;
-                margin-right: -145px;
-            }
-        }
+        /*@media screen and (max-width: 345px ) {*/
+            /*#login_wrap {*/
+                /*width: 290px;*/
+                /*margin-right: -145px;*/
+            /*}*/
+        /*}*/
 
         #errorTip {
             color: yellow;
@@ -194,9 +195,11 @@
             float: left;
             margin-left: 5px;
         }
+        #memberForm{
+            margin-top: -30px;
+        }
     </style>
 </head>
-
 <body>
 <input type="hidden" value="<%=basePath%>" id="basePath">
 <input type="hidden" id="isSignIn" />
@@ -214,18 +217,35 @@
                 <i style="top: 0">个人信息</i>
                 <%--<i style="right: 5px">登录</i>--%>
             </div>
-            <div style="    margin-left: 350px;">
+            <div style="margin-left: 350px;">
                     <form action="post" id="memberForm">
                         <input type="hidden" id="id" name="id" value="${member.id}">
+                        <input type="hidden" id="memberHeadImg" name="id" value="${member.headImg}">
                         <p class="form formFont">登录账号:${member.account}</p>
                         <br><br>
                         <p class="form formFont">用户昵称:</p>
-                        <p class="form"><input type="text" id="user" placeholder="请输入用户昵称" value=":${member.name}"></p>
+                        <p class="form"><input type="text" id="user" placeholder="请输入用户昵称" value="${member.name}"></p>
                         <p class="form formFont">&nbsp;&nbsp;新密码:</p>
                         <p class="form"><input type="password" id="passwd" placeholder="请输入新密码"></p>
                         <p class="form formFont">个人爱好:</p>
                         <p class="form"><input type="text" id="hobby" placeholder="请输入个人爱好" value="${member.hobby}"></p>
-                        <p class="form formFont">喜欢城市:</p><br>
+                        <p class="form formFont">&nbsp;&nbsp;性&nbsp;&nbsp;别:</p>
+                        <%--<p class="form">--%>
+                        <%--</p>--%>
+                            <input class="checkBoxInput" type="radio" name="gender" value="1" >男
+                            <input class="checkBoxInput" type="radio" name="gender" value="2" >女
+                        <p></p>
+                        <p class="form formFont">自我介绍:</p>
+                        <p class="form"><input type="text" id="summary" placeholder="请输入自我介绍" value="${member.summary}"></p>
+                        <p class="form formFont">出生日期:</p>
+                        <p class="form"><input type="date" id="birthday" placeholder="请输入出生日期" value="${member.birthday}"></p>
+                        <p class="form formFont">&nbsp;&nbsp;头&nbsp;&nbsp;像:</p>
+                        <div style="width: 500px;">
+                        <input type="file" name="uploadFile" id="imgUpload" />
+                        </div>
+                        <p class="form"></p>
+
+                        <p class="form formFont">喜欢城市:</p><p>
                         <div class="form">
                             <c:forEach items="${cityList}" var="city">
                             <div style="float: left;margin-left: 5px;">
@@ -235,38 +255,25 @@
                             </c:forEach>
                         </div>
                         <br><br><br>
-                            <%--<input type="text" id="passwd" placeholder="请输入喜欢城市"></p>--%>
-
                         <p id="errorTip"></p>
                         <br>
+                        <div style="margin-left: 400px;">
                         <input type="button" value="修改信息" class="btn logBtn" onclick="update_confirm()"
-                               style="margin-right: 20px;">
-                        <input type="button" value="删除账号" class="btn logBtn" onclick='delete_confirm()' id="btn">
+                               style="margin-left: -400px;">
+                        <input type="button" value="删除账号" class="btn logBtn" onclick='delete_confirm()'
+                               style="margin-left: -250px;float: left;">
+                        </div>
                     </form>
-                    <%--<a href="javascript:void(0);">Forget your password?</a>--%>
                 </div>
         </div>
-
     </div>
 </div>
 </body>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/attraction/fileinput.min.js"></script>
 <script>
     var basePath = $("#basePath").val();
-
-    showLogIn();
-    var onoff = true//根据此布尔值判断当前为注册状态还是登录状态
     var confirm = document.getElementsByClassName("confirm")[0]
-
-    //自动居中title
-    var name_c = document.getElementById("title")
-    name = name_c.innerHTML.split("")
-    name_c.innerHTML = ""
-    for (var i = 0; i < name.length; i++) {
-        if (name[i] != ",") {
-            name_c.innerHTML += "<i>" + name[i] + "</i>"
-        }
-    }
 
     // 参数检查
     function checkParam() {
@@ -298,6 +305,7 @@
             }, "json");
         }
     }
+
     function update_confirm() {
         // var errorMsg = checkParam();
         var errorMsg = 'success';
@@ -312,9 +320,13 @@
             });
             $.post(url,{
                 id : $("#id").val(),
-                username : $("#user").val(),
+                name : $("#user").val(),
                 password : $("#passwd").val(),
                 hobby : $("#hobby").val(),
+                summary : $("#summary").val(),
+                birthday : $("#birthday").val(),
+                headImg : $("#memberHeadImg").val(),
+                gender : $("[name='gender']:checked").val(),
                 favAttraction : checkVal,
             },function (obj) {
                 if(obj.code === "200") {
@@ -330,6 +342,33 @@
             $("#errorTip").html(errorMsg);
         }
     }
-</script>
 
+    $(function () {
+        $("#ClCache").remove();
+
+        $("#imgUpload").fileinput({
+            language: "zh",
+            // showPreview:false,
+            showCaption: false, // 不显示本地文件名
+            allowedFileTypes: ['image'], // 只允许上传图片
+            allowedFileExtensions: ["jpg", "jpeg", "png", "gif"],
+            initialPreview: ['<img style="width: 100%;height: 100%;" src="'+$("#memberHeadImg").val()+'" />'],
+            showRemove : false, //显示移除按钮
+            showUpload : false,
+            initialPreviewFileType: 'image',
+            browseClass: "btn btn-primary",
+            msgFilesTooMany: "选择上传的文件数量{n} 超过允许的最大数值{m}！",
+            // maxFileCount: 5, //表示允许同时上传的最大文件个数
+            layoutTemplates:{
+                actionDownload : '',
+                actionZoom : '',
+            },
+            uploadUrl: "/file/uploadFTP" //上传图片的服务器地址
+        }).on('fileuploaded', function (event, data, previewId, index) {
+            var response = data.response;
+            var image = response.data[0];
+            $("#memberHeadImg").val(image);
+        });
+    })
+</script>
 </html>

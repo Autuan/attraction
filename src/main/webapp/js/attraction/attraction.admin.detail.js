@@ -42,8 +42,6 @@ $(function () {
         } else {
             url = "/admin/attraction/updateAttraction";
         }
-        // var data = $("#articleForm").serialize();
-        // data += '&attractionDetail=' + content;
         var data = {
             id : $("#id").val(),
             attractionName : $("#attractionName").val(),
@@ -52,16 +50,18 @@ $(function () {
             attractionSummary : $("#attractionSummary").val(),
             attractionPrice : $("#attractionPrice").val(),
             attractionImg : $("#attractionImg").val(),
+            attractionOpenTime : $("#attractionOpenTime").val(),
+            attractionEndTime : $("#attractionEndTime").val(),
             attractionDetail : content,
         }
         $.post(url, data, function (obj) {
-            if (obj == "success") {
+            if (obj.code==='200') {
                 alert("成功");
                 location = "/admin/attraction/listPage";
             } else {
                 alert("操作失败,请稍后重试");
             }
-        }, "text");
+        }, "json");
     });
 
     $("#imgUpload").fileinput({

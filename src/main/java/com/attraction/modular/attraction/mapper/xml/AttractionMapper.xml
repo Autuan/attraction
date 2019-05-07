@@ -9,6 +9,8 @@
     <result column="attraction_summary" property="attractionSummary" jdbcType="VARCHAR" />
     <result column="attraction_price" property="attractionPrice" jdbcType="DECIMAL" />
     <result column="attraction_detail" property="attractionDetail" jdbcType="VARCHAR" />
+    <result column="attraction_open_time" property="attractionOpenTime" jdbcType="VARCHAR" />
+    <result column="attraction_end_time" property="attractionEndTime" jdbcType="VARCHAR" />
     <result column="attraction_img" property="attractionImg" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -71,7 +73,7 @@
   </sql>
   <sql id="Base_Column_List" >
     id, attraction_name, attraction_star, attraction_address, attraction_summary, attraction_price, 
-    attraction_detail, attraction_img
+    attraction_detail, attraction_open_time, attraction_end_time, attraction_img
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.attraction.modular.attraction.entity.AttractionExample" >
     select
@@ -107,10 +109,12 @@
   <insert id="insert" parameterType="com.attraction.modular.attraction.entity.Attraction" >
     insert into attraction_tab (id, attraction_name, attraction_star, 
       attraction_address, attraction_summary, attraction_price, 
-      attraction_detail, attraction_img)
+      attraction_detail, attraction_open_time, attraction_end_time, 
+      attraction_img)
     values (#{id,jdbcType=INTEGER}, #{attractionName,jdbcType=VARCHAR}, #{attractionStar,jdbcType=INTEGER}, 
       #{attractionAddress,jdbcType=VARCHAR}, #{attractionSummary,jdbcType=VARCHAR}, #{attractionPrice,jdbcType=DECIMAL}, 
-      #{attractionDetail,jdbcType=VARCHAR}, #{attractionImg,jdbcType=VARCHAR})
+      #{attractionDetail,jdbcType=VARCHAR}, #{attractionOpenTime,jdbcType=VARCHAR}, #{attractionEndTime,jdbcType=VARCHAR}, 
+      #{attractionImg,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.attraction.modular.attraction.entity.Attraction" >
     insert into attraction_tab
@@ -135,6 +139,12 @@
       </if>
       <if test="attractionDetail != null" >
         attraction_detail,
+      </if>
+      <if test="attractionOpenTime != null" >
+        attraction_open_time,
+      </if>
+      <if test="attractionEndTime != null" >
+        attraction_end_time,
       </if>
       <if test="attractionImg != null" >
         attraction_img,
@@ -161,6 +171,12 @@
       </if>
       <if test="attractionDetail != null" >
         #{attractionDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="attractionOpenTime != null" >
+        #{attractionOpenTime,jdbcType=VARCHAR},
+      </if>
+      <if test="attractionEndTime != null" >
+        #{attractionEndTime,jdbcType=VARCHAR},
       </if>
       <if test="attractionImg != null" >
         #{attractionImg,jdbcType=VARCHAR},
@@ -197,6 +213,12 @@
       <if test="record.attractionDetail != null" >
         attraction_detail = #{record.attractionDetail,jdbcType=VARCHAR},
       </if>
+      <if test="record.attractionOpenTime != null" >
+        attraction_open_time = #{record.attractionOpenTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attractionEndTime != null" >
+        attraction_end_time = #{record.attractionEndTime,jdbcType=VARCHAR},
+      </if>
       <if test="record.attractionImg != null" >
         attraction_img = #{record.attractionImg,jdbcType=VARCHAR},
       </if>
@@ -214,6 +236,8 @@
       attraction_summary = #{record.attractionSummary,jdbcType=VARCHAR},
       attraction_price = #{record.attractionPrice,jdbcType=DECIMAL},
       attraction_detail = #{record.attractionDetail,jdbcType=VARCHAR},
+      attraction_open_time = #{record.attractionOpenTime,jdbcType=VARCHAR},
+      attraction_end_time = #{record.attractionEndTime,jdbcType=VARCHAR},
       attraction_img = #{record.attractionImg,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -240,6 +264,12 @@
       <if test="attractionDetail != null" >
         attraction_detail = #{attractionDetail,jdbcType=VARCHAR},
       </if>
+      <if test="attractionOpenTime != null" >
+        attraction_open_time = #{attractionOpenTime,jdbcType=VARCHAR},
+      </if>
+      <if test="attractionEndTime != null" >
+        attraction_end_time = #{attractionEndTime,jdbcType=VARCHAR},
+      </if>
       <if test="attractionImg != null" >
         attraction_img = #{attractionImg,jdbcType=VARCHAR},
       </if>
@@ -254,6 +284,8 @@
       attraction_summary = #{attractionSummary,jdbcType=VARCHAR},
       attraction_price = #{attractionPrice,jdbcType=DECIMAL},
       attraction_detail = #{attractionDetail,jdbcType=VARCHAR},
+      attraction_open_time = #{attractionOpenTime,jdbcType=VARCHAR},
+      attraction_end_time = #{attractionEndTime,jdbcType=VARCHAR},
       attraction_img = #{attractionImg,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>

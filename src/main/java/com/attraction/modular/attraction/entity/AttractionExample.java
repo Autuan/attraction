@@ -565,6 +565,146 @@ public class AttractionExample {
             return (Criteria) this;
         }
 
+        public Criteria andAttractionOpenTimeIsNull() {
+            addCriterion("attraction_open_time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeIsNotNull() {
+            addCriterion("attraction_open_time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeEqualTo(String value) {
+            addCriterion("attraction_open_time =", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeNotEqualTo(String value) {
+            addCriterion("attraction_open_time <>", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeGreaterThan(String value) {
+            addCriterion("attraction_open_time >", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeGreaterThanOrEqualTo(String value) {
+            addCriterion("attraction_open_time >=", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeLessThan(String value) {
+            addCriterion("attraction_open_time <", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeLessThanOrEqualTo(String value) {
+            addCriterion("attraction_open_time <=", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeLike(String value) {
+            addCriterion("attraction_open_time like", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeNotLike(String value) {
+            addCriterion("attraction_open_time not like", value, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeIn(List<String> values) {
+            addCriterion("attraction_open_time in", values, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeNotIn(List<String> values) {
+            addCriterion("attraction_open_time not in", values, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeBetween(String value1, String value2) {
+            addCriterion("attraction_open_time between", value1, value2, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionOpenTimeNotBetween(String value1, String value2) {
+            addCriterion("attraction_open_time not between", value1, value2, "attractionOpenTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeIsNull() {
+            addCriterion("attraction_end_time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeIsNotNull() {
+            addCriterion("attraction_end_time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeEqualTo(String value) {
+            addCriterion("attraction_end_time =", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeNotEqualTo(String value) {
+            addCriterion("attraction_end_time <>", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeGreaterThan(String value) {
+            addCriterion("attraction_end_time >", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeGreaterThanOrEqualTo(String value) {
+            addCriterion("attraction_end_time >=", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeLessThan(String value) {
+            addCriterion("attraction_end_time <", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeLessThanOrEqualTo(String value) {
+            addCriterion("attraction_end_time <=", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeLike(String value) {
+            addCriterion("attraction_end_time like", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeNotLike(String value) {
+            addCriterion("attraction_end_time not like", value, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeIn(List<String> values) {
+            addCriterion("attraction_end_time in", values, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeNotIn(List<String> values) {
+            addCriterion("attraction_end_time not in", values, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeBetween(String value1, String value2) {
+            addCriterion("attraction_end_time between", value1, value2, "attractionEndTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andAttractionEndTimeNotBetween(String value1, String value2) {
+            addCriterion("attraction_end_time not between", value1, value2, "attractionEndTime");
+            return (Criteria) this;
+        }
+
         public Criteria andAttractionImgIsNull() {
             addCriterion("attraction_img is null");
             return (Criteria) this;

@@ -45,10 +45,10 @@ function showStatusFormatter(value, row, index) {
     }
 }
 
-function deleteDept() {
-    var deptId = $("#deleteDeptId").val();
-    $.post("/dept/deleteDept", {deptId: deptId}, function (obj) {
-        if (obj == "success") {
+function deleteFun() {
+    var id = $("#id").val();
+    $.post("/admin/attraction/deleteAttraction", {id: id}, function (obj) {
+        if (obj.code==='200') {
             alert("删除成功");
         }
         $("#bootstrapTable").bootstrapTable('refresh');
@@ -57,7 +57,7 @@ function deleteDept() {
 
 window.operateEvents = {
     'click .ButtonB': function (e, value, row, index) {
-        $("#deleteDeptId").val(row.deptId);
+        $("#id").val(row.id);
         $("#deleteModal").modal('show');
     }
 };

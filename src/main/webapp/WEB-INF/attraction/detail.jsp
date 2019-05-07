@@ -12,6 +12,9 @@
     <meta charset="utf-8">
     <title>详情页面</title>
     <link href="/css/attraction.detail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/fileinput.min.css">
+
 </head>
 
 <body>
@@ -60,7 +63,9 @@
     <div class="centerbox">
         <p class="imgname">${attraction.attractionName}</p>
         <p class="price">参考票价：<samp>￥${attraction.attractionPrice}</samp></p>
-        <div class="fenx"><a href="#"><img src="images/shopdetail/tell07.png"></a></div>
+        <%--<p class="price">参考票价：<samp>￥${attraction.attractionPrice}</samp></p>--%>
+        <div class="fenx">开放时间</div>
+        <div class="fenx"><span>${attraction.attractionOpenTime}</span>   至   <span>${attraction.attractionEndTime}</span></div>
     </div>
 
 </div>
@@ -82,14 +87,18 @@
             <div class="panel" id="panel02">
                 <c:if test="${member.account != null}">
                     <p class="judge"><span><a href="javascript:void(0);" id="commentAttraction">新增或修改评价</a></span></p>
-                    <div class="judge01" id="commentDiv">
-                        <input type="radio" name="type" value="1">喜欢
-                        <input type="radio" name="type" value="2">一般
-                        <input type="radio" name="type" value="3">讨厌
-                        <br><br>
-                        <textarea id="commentContent" style="float: left;" type="text" value="输入您的评价" rows="7"
-                                  cols="80">输入您的评价</textarea>
-                        <button style="float: left;margin-top: 9%;margin-left: 5px;" id="commentBtn">确认</button>
+                    <div id="commentDiv" style="margin-bottom: 30px;">
+                        <div class="judge01">
+                            <input type="hidden" id="commentImg" />
+                            <input type="radio" name="type" value="1">喜欢
+                            <input type="radio" name="type" value="2">一般
+                            <input type="radio" name="type" value="3">讨厌
+                            <br><br>
+                            <textarea id="commentContent" style="float: left;" type="text" value="输入您的评价" rows="7"
+                                      cols="80">输入您的评价</textarea>
+                        </div>
+                        <input type="file" name="uploadFile" id="imgUpload"  multiple="multiple" />
+                        <button class="btn btn-info" style="float: left;margin-top: 1%;margin-left: 5px;" id="commentBtn">确认</button>
                     </div>
                 </c:if>
                 <c:forEach items="${commentList}" var="comment">
@@ -111,9 +120,11 @@
                                     </c:when>
                                 </c:choose>
                             </p>
-                                <%--<img src="images/shopdetail/detail103.jpg" width="40px" height="40px">--%>
-                                <%--<img src="images/shopdetail/detail104.jpg" width="40px" height="40px">--%>
-                                <%--<img src="images/shopdetail/detail105.jpg" width="40px" height="40px">--%>
+                                <c:if test="${comment.imgList != null}">
+                                    <c:forEach items="${comment.imgList}" var="commentImage">
+                                        <img src="${commentImage}" width="40px" height="40px">
+                                    </c:forEach>
+                                </c:if>
                         </div>
                     </div>
                 </c:forEach>
@@ -129,11 +140,21 @@
                     <input type="radio" name="mapRoute" value="2"> 步行
                     <button id="routeBtn">查询推荐方案</button>
                 </p>
-                <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
                 <style type="text/css">
-                    html{height:100%}
-                    body{height:100%;margin:0px;padding:0px}
-                    #container{height:500px;}
+                    html {
+                        height: 100%
+                    }
+
+                    body {
+                        height: 100%;
+                        margin: 0px;
+                        padding: 0px
+                    }
+
+                    #container {
+                        height: 500px;
+                    }
                 </style>
                 <div id="container"></div>
                 <div class="com">
@@ -142,9 +163,7 @@
             </div>
 
         </div>
-
     </div>
-
 </div>
 
 <!-----详情评价部结束分------->
@@ -154,13 +173,13 @@
     <div class="foot">
         <p>使用本网站即表示接受 用户协议</p>
         <p>版权所有——————————————————</p>
-
     </div>
 </div>
 <script src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6FE4buMdXYAgSAIWq9dODEQohGLViETF"></script>
-<script src="/js/attraction/attraction.detail.js"></script>
+<script src="${pageContext.request.contextPath}/js/attraction/fileinput.min.js"></script>
 <script src="/js/attraction/attraction.detail.common.js"></script>
+<script src="/js/attraction/attraction.detail.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var showproduct = {
@@ -187,10 +206,10 @@
                 $this.addClass('active').blur();
                 var panel = $this.attr("href");
                 $(panel).show();
-                if($(this).prop("id") === 'mapNav') {
+                if ($(this).prop("id") === 'mapNav') {
                     activeBaiduMap();
                 }
-                return fasle;  //告诉浏览器  不要纸箱这个链接
+                return false;  //告诉浏览器  不要纸箱这个链接
             })//end click
             $(".tabs li:first a").click()   //web 浏览器，单击第一个标签吧
 

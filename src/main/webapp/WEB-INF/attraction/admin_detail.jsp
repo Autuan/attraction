@@ -55,6 +55,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-sm-2 control-label">开放时间</label>
+                                <div class="col-sm-10">
+                                    <input type="time" class="form-control col-sm-4" name="attractionOpenTime" id="attractionOpenTime"
+                                          value="${attraction.attractionOpenTime}">
+                                    <span class="col-sm-1">至</span>
+                                    <input type="time" class="form-control col-sm-4" name="attractionEndTime" id="attractionEndTime"
+                                          value="${attraction.attractionEndTime}">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="attractionSummary" class="col-sm-2 control-label">简介</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" name="attractionSummary" id="attractionSummary"
@@ -100,7 +110,6 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/main.js"></script>
 <script src="${pageContext.request.contextPath}/js/wangEditor.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/attraction/uploadImg.js"></script>
 <script src="${pageContext.request.contextPath}/js/attraction/fileinput.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/attraction/attraction.admin.detail.js"></script>
 </body>

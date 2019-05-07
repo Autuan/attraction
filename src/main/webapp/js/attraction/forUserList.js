@@ -4,21 +4,8 @@ $(".userList").addClass("active");
 function passwordFormatter(value , row ,index) {
     return "修改密码";
 }
-function deptFormatter(value, row, index) {
-    var url = "/dept/getDeptList";
-    var callback = function (obj) {
-        for (var i=0;i<obj.length;i++) {
-            if ( value == obj[i].deptId) {
-                return obj[i].deptName;
-            }
-
-        }
-        return "未找到,请联系技术";
-    };
-    $.get(url, callback, "json");
-}
 function insertUser() {
-    var url = "/user/insertUser";
+    var url = "/admin/user/insertUser";
     var data = $("#userForm").serialize();
     var callback = function (obj) {
         if (obj == "success") {
@@ -35,20 +22,14 @@ function insertUser() {
     }
     $.post(url, data, callback, "text");
 }
-function deleteDept() {
-    var userId = $("#deleteDeptId").val();
-    $.post("/user/deleteUser",{userId:userId},function (obj) {
-        if (obj == "success") {
-            alert("删除成功");
-        } else if ( obj == "cannotDeleteYourself") {
-            alert("不能删除自己");
-        }  else if ( obj == "cannotDeleteAdmin") {
-            alert("管理员账户不能删除");
-        } else {
-            alert("删除失败");
+function deleteFun() {
+    var userId = $("#deleteFunId").val();
+    $.post("/admin/user/deleteUser",{userId:userId},function (obj) {
+        if(obj.code !== '200') {
+            alert(obj.msg);
         }
         $("#blogTable").bootstrapTable('refresh');
-    },"text");
+    },"json");
 }
 function queryParams(params){
     return{
@@ -67,13 +48,6 @@ function showNameFormatter(value,row,index) {
     switch (value) {
         case 3 : return '经理';break;
         default:return '工作人员';break;
-    }
-}
-function roleFormatter(value,row,index) {
-    switch (value) {
-        case 0 : return "工作人员";break;
-        case 1 : return "技术人员";break;
-        case 2 : return "主管";break;
     }
 }
 function showNameFormatter2(value,row,index) {
@@ -95,7 +69,7 @@ function showStatusFormatter(value,row,index) {
 
 window.operateEvents = {
     'click .ButtonB': function (e, value, row, index) {
-        $("#deleteDeptId").val(row.userId);
+        $("#deleteFunId").val(row.userId);
         $("#deleteModal").modal('show');
     }
 };
@@ -215,13 +189,5 @@ $(function(){
 
 
 $("#btn_add").click(function () {
-    $("#deptId").empty()
-    var url = "/dept/getDeptList";
-    var callback = function (obj) {
-        for (var i=0;i<obj.length;i++) {
-            $("#deptId").append("<option value='"+obj[i].deptId+"'>"+obj[i].deptName+"</option>")
-        }
-    };
-    $.get(url, callback, "json");
     $("#myModal").modal('show');
 })
